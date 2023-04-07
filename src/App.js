@@ -30,15 +30,16 @@ export default function App() {
 
   useEffect(()=>{
     setReady(true)
-
-    window.addEventListener("resize",(e) => {
-      console.log("resize çalıstı")
-      if(window.innerWidth < 500){
-          setClassState("pages-mobile")
-      }
-      else setClassState("pages")
-  })
+    window.addEventListener("resize",handleResizeFunc)
+     handleResizeFunc();
   },[])
+
+  const handleResizeFunc = () => {
+    if(window.innerWidth < 500){
+        setClassState("pages mobile")
+    }
+    else setClassState("pages")
+}
 
   return (
     <div className="App">

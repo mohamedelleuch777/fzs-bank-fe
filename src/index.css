@@ -59,7 +59,7 @@ button:hover {
   text-align: left;
   margin: 20px auto;
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
 }
 
 .input-field h3 {
@@ -124,7 +124,7 @@ div.bottom-details > div .detail-item * {
   flex: 1;
 }
 
-.pages-mobile {
+.pages.mobile {
   width: 100vw !important;
   left: 0 !important;
 }

@@ -14,15 +14,16 @@ const Navbar = () => {
     const handleClick = () => {
         logout();
     }
+    const handleResizeFunc = () => {
+        if(window.innerWidth < 500){
+            setClassState("left-menu mobile")
+        }
+        else setClassState("left-menu")
+    }
 
     useEffect(() => {
-        window.addEventListener("resize",(e) => {
-            console.log("resize çalıstı")
-            if(window.innerWidth < 500){
-                setClassState("left-menu-mobile")
-            }
-            else setClassState("left-menu")
-        })
+        window.addEventListener("resize",handleResizeFunc)
+        handleResizeFunc();
     })
 
     return  <section className={classState}>

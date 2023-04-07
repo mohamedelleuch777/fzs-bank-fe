@@ -14,8 +14,7 @@
 
 }
 
-.top-bar-mobile {
-    display: flex;
+.top-bar.mobile {
+    top: 0;
     align-items: center;
-    justify-content: space-between;
 }

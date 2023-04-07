@@ -8,8 +8,17 @@
     z-index: 100;
     border-right: solid 2px #d2dee5;
 }
-.left-menu-mobile {
+.left-menu.mobile {
     left: -250px;
     position: relative;
+    width: 250px;
+    transition: .6s ease all;
+    padding-top: 10px;
+    top: 45px;
+}
+
+.left-menu.mobile.show {
+    left: 0;
+    transition: .6s ease all;
 }
 

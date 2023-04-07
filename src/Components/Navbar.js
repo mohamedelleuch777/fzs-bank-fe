@@ -14,19 +14,33 @@ const Navbar = () => {
     const handleClick = () => {
         logout();
     }
+    const handleResizeFunc = () => {
+        if(window.innerWidth < 500){
+            setClassState("top-bar mobile")
+        }
+        else setClassState("top-bar")
+    }
+
+    const toggleLeftMenu = () => {
+
+        const leftMenu = document.querySelector("section.left-menu")
+        let classList = leftMenu.getAttribute("class")
+        if(classList.includes('show')) {
+            classList = "left-menu mobile"
+        }
+        else {
+            classList = "left-menu mobile show" 
+        }
+        leftMenu.setAttribute("class" , classList)
+    }
 
     useEffect(() => {
-        window.addEventListener("resize",(e) => {
-            console.log("resize çalıstı")
-            if(window.innerWidth < 500){
-                setClassState("top-bar-mobile")
-            }
-            else setClassState("top-bar")
-        })
+        window.addEventListener("resize",handleResizeFunc)
+        handleResizeFunc();
     })
 
     return <header className={classState}>
-        <div>
+        <div onClick={toggleLeftMenu}>
             <Icon icon="list" />
         </div>
         <div>
