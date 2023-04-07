@@ -41,7 +41,9 @@ const Navbar = () => {
 
     return <header className={classState}>
         <div onClick={toggleLeftMenu}>
-            <Icon icon="list" />
+            <Icon style={{fontSize: 30,
+    padding: "5px 10px",
+    margin: "auto 5px"}} icon="list" />
         </div>
         <div>
             { user && (
