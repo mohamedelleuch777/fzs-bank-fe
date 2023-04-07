@@ -14,6 +14,7 @@ import ClientManagement from "./Pages/Client_mgt";
 export default function App() {
   const [ready, setReady] = useState(false);
   const { user } = useAuthContext();
+  const [classState,setClassState] = useState("pages")
 
   const innerPageStart = {
     position: "fixed",
@@ -29,6 +30,14 @@ export default function App() {
 
   useEffect(()=>{
     setReady(true)
+
+    window.addEventListener("resize",(e) => {
+      console.log("resize çalıstı")
+      if(window.innerWidth < 500){
+          setClassState("pages-mobile")
+      }
+      else setClassState("pages")
+  })
   },[])
 
   return (
@@ -36,7 +45,7 @@ export default function App() {
       <BrowserRouter>
         <Navbar />
         { user && <LeftMenu />}
-        {ready && <div style={innerPageStart} className="pages">
+        {ready && <div style={innerPageStart} className={classState}>
           <Routes>
             <Route path="/" exact element={user ? <Dashboard /> : <Navigate to="/login" />} />
             <Route path="/client" exact element={user ? <ClientManagement /> : <Navigate to="/login" />} />

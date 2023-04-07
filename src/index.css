@@ -123,3 +123,8 @@ div.bottom-details > div .detail-item {
 div.bottom-details > div .detail-item * {
   flex: 1;
 }
+
+.pages-mobile {
+  width: 100vw !important;
+  left: 0 !important;
+}

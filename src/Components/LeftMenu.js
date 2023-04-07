@@ -1,11 +1,13 @@
 // import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuthContext } from '../Hooks/useAuthContext';
 import { useLogout } from '../Hooks/useLogout';
 import './LeftMenu.css';
 import styles from './styles.module.css'
 
 const Navbar = () => {
+
+    const [classState,setClassState] = useState("left-menu")
     const { logout } = useLogout();
     const { user } = useAuthContext();
 
@@ -13,7 +15,17 @@ const Navbar = () => {
         logout();
     }
 
-    return  <section className="left-menu">
+    useEffect(() => {
+        window.addEventListener("resize",(e) => {
+            console.log("resize çalıstı")
+            if(window.innerWidth < 500){
+                setClassState("left-menu-mobile")
+            }
+            else setClassState("left-menu")
+        })
+    })
+
+    return  <section className={classState}>
                 <ul className={styles.listUL}>
                     <Item label="Dashboard" icon="house" color="#4680ff" path="/" />
                     <Item label="Clients" icon="people" color="#FC6180" path="/client" />

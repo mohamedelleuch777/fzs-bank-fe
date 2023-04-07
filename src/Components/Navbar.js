@@ -3,19 +3,32 @@ import { useAuthContext } from '../Hooks/useAuthContext';
 import { useLogout } from '../Hooks/useLogout';
 import Button from './button';
 import './Navbar.css'
+import { useState,useEffect } from 'react';
+import Icon from './icon';
 
 const Navbar = () => {
     const { logout } = useLogout();
     const { user } = useAuthContext();
+    const [classState,setClassState] = useState("top-bar")
 
     const handleClick = () => {
         logout();
     }
 
-    return <header className="top-bar">
-        <Link to="/">
-            <h1>Home Page</h1>
-        </Link>
+    useEffect(() => {
+        window.addEventListener("resize",(e) => {
+            console.log("resize çalıstı")
+            if(window.innerWidth < 500){
+                setClassState("top-bar-mobile")
+            }
+            else setClassState("top-bar")
+        })
+    })
+
+    return <header className={classState}>
+        <div>
+            <Icon icon="list" />
+        </div>
         <div>
             { user && (
                 <div>
