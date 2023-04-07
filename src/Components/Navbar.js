@@ -45,10 +45,10 @@ const Navbar = () => {
         </div>
         <div>
             { user && (
-                <div>
+                <div className='virtual-pop-menu'>
                     <span>{user.data}</span>
                     {/* <button className="topbar-logout" onClick={handleClick}>Logout</button> */}
-                    <Button style={btnStyle} label="Logout" icon="box-arrow-right" onClick={handleClick} type="primary" />
+                    <Button className={classState.includes("mobile") ? "virtual-pop-button" : ""} style={btnStyle} label="Logout" icon="box-arrow-right" onClick={handleClick} type="primary" />
                 </div>
             )}
             { !user && (

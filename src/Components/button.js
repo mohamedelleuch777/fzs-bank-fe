@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './buttonStyles.module.css';
 import Icon from "./icon";
 
 export default function Button (props) {
 
+    const [externalClass,] = useState( " " + props.className || "") 
 
     const primary = " " + styles.primary;
     const success = " " + styles.success;
@@ -39,7 +40,7 @@ export default function Button (props) {
     return (
         <button 
             onClick={props.onClick} 
-            className={styles.mainStyle+getBtnType()} 
+            className={styles.mainStyle+getBtnType() + externalClass} 
             style={props.style}
             id={props.id}
             disabled={props.disabled}
