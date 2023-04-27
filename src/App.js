@@ -8,7 +8,7 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import { useAuthContext } from "./Hooks/useAuthContext";
 import ClientManagement from "./Pages/Client_mgt";
-
+import Profile from "./Pages/Profile";
 
 
 export default function App() {
@@ -50,6 +50,7 @@ export default function App() {
           <Routes>
             <Route path="/" exact element={user ? <Dashboard /> : <Navigate to="/login" />} />
             <Route path="/client" exact element={user ? <ClientManagement /> : <Navigate to="/login" />} />
+            <Route path="/profile" exact element={user ? <Profile /> : <Navigate to="/login" />} />
             <Route path="/login" exact element={!user ? <Login /> : <Navigate to="/" />} />
             <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />
             <Route path="/*" element={<NoPage />} />

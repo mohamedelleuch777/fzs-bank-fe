@@ -80,9 +80,12 @@ padding-inline-start: 0px !important;
     
   }
   .menu-setting{
-    color: black;
+    color: black !important;
     font-weight: 700;
     font-family: 'Jaldi', sans-serif;
+  }
+  .menu-setting a{
+    color: black !important;
   }
   .menu-bottom{
     font-family: 'Jaldi', sans-serif;

@@ -12,6 +12,7 @@ import {MdOutlineFolderOpen,MdOutlineQrCode } from 'react-icons/md';
 import {BiCartDownload } from 'react-icons/bi';
 import {BsCreditCard2Front, BsFiles } from 'react-icons/bs';
 import {TbFileStack} from 'react-icons/tb';
+import { Link } from 'react-router-dom';
  
 
 
@@ -171,8 +172,8 @@ const Navbar = () => {
                 <div className= "sidebar-item setting">
                     <div className="sidebar-title menu-setting">
                         
-                        <span href="">
-                            FRONTEND LİMİTED
+                        <span >
+                           <Link to="/profile"> FRONTEND LİMİTED</Link>
                         </span>
                         
                     </div>

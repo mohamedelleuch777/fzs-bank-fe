@@ -1,0 +1,12 @@
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 1170px;
+    margin: 30px;
+}
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
