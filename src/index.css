@@ -3,13 +3,15 @@
   --secondary: #fff;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Patrick Hand', cursive;
-}
+  font-family: 'Cabin', sans-serif;
 
+}
 body.flex {
   display: flex;
   justify-content: center;

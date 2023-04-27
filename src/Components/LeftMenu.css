@@ -1,12 +1,24 @@
+a{
+    text-decoration: none !important;
+}
 .left-menu {
     position: fixed;
     top: 60px;
     width: 300px;
     max-width: 400px;
     height: calc(100vh - 60px);
-    background-color: #fff;
+    box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+    background-image: linear-gradient(#79989B, #BAADA0);
     z-index: 100;
     border-right: solid 2px #d2dee5;
+    flex-shrink: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.left-menu ul{
+padding-inline-start: 0px !important;
 }
 .left-menu.mobile {
     left: -250px;
@@ -21,4 +33,46 @@
     left: 0;
     transition: .6s ease all;
 }
+.sidebar-item{
+    padding: .50em 1em;
+    display: block;
+  }
+
+  .sidebar-title{
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+  }
+  .sidebar-title span i{
+    display: inline-block;
+  }
+  .sidebar-title .toggle-btn{
+    cursor: pointer;
+    transition: transform .3s;
+  }
+  .sidebar-item.open > .sidebar-title .toggle-btn{
+    transform: rotate(180deg);
+  }
+  .sidebar-content{
+    padding-top: .25em;
+    height: 0;
+    overflow: hidden;
+  }
+  .sidebar-item.open > .sidebar-content{
+    height: auto;
+  }
+  .sub-title{
+    padding-inline-start: 40px;
+  }
+  .setting{
+    background-color: white;
+    
+  }
+  .menu-setting{
+    color: black;
+    font-weight: 500;
+  }
+
+  
 

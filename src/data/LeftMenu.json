@@ -1,0 +1,115 @@
+[
+    {
+        "title": "Banka Hesabı",
+        "icon": "bi-house",
+        "childrens": [
+            {
+                "title": "Hesap Aç",
+                "icon": "bi-house-fill",
+                "path": "/"
+            },
+            {
+                "title": "Yönet",
+                "icon": "bi-info-circle-fill",
+                "path": "/"
+            }
+        ]
+    },
+    {
+        "title": "Finansman",
+        "icon": "people",
+        "childrens": [
+            {
+                "title": "Başvuru",
+                "path": "/"
+            },
+            {
+                "title": "Yönet",
+                "path": "/"
+            }
+           
+        ]
+    },
+    {
+        "title": "Kart",
+        "icon": "bi bi-credit-card-2-front",
+        "childrens": [
+            {
+                "title": "Banka Kartı",
+                "path": "/"
+            },
+            {
+                "title": "Sanal Kart",
+                "icon": "bi-person-fill"
+                
+            }
+           
+        ]
+    },
+    {
+        "title": "FX",
+        "icon": "bi-view-list",
+        "childrens": [
+            {
+                "title": "Döviz",
+                "path": "/"
+            },
+            {
+                "title": "Altın",
+                "path": "/"   
+            },
+            {
+                "title": "Gümüş",
+                "path": "/"   
+            }
+        ]
+    },
+    {
+        "title": "EFT",
+        "icon": "bi-view-list",
+        "childrens": [
+            {
+                "title": "EFT&FAST",
+                "path": "/"
+            },
+            {
+                "title": "UPT",
+                "path": "/"   
+            }
+            
+        ]
+    }, {
+        "title": "Fatura",
+        "icon": "bi-view-list",
+        "childrens": [
+            {
+                "title": "Elektrik",
+                "path": "/"
+            },
+            {
+                "title": "Doğalgaz",
+                "path": "/"   
+            },
+            {
+                "title": "Su",
+                "path": "/"   
+            }
+        ]
+    },
+    {
+        "title": "Karekod",
+        "icon": "bi-view-list"
+       
+    },
+    {
+        "title": "Sanal Pos",
+        "icon": "bi-view-list"
+        
+    },
+    {
+        "title": "Tüm Hesaplarım",
+        "icon": "bi-view-list"
+        
+    }
+   
+]

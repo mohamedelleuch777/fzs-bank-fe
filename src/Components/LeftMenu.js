@@ -4,6 +4,8 @@ import { useAuthContext } from '../Hooks/useAuthContext';
 import { useLogout } from '../Hooks/useLogout';
 import './LeftMenu.css';
 import styles from './styles.module.css'
+import LeftMenuItem from './LeftMenuItem';
+import items from './../data/LeftMenu.json'
 
 const Navbar = () => {
 
@@ -27,14 +29,33 @@ const Navbar = () => {
     })
 
     return  <section className={classState}>
+                <div className= "sidebar-item setting">
+                    <div className="sidebar-title menu-setting">
+                        
+                        <span href="">
+                            FRONTEND LİMİTED 
+                        </span>
+                        
+                    </div>
+                </div>
                 <ul className={styles.listUL}>
-                    <Item label="Dashboard" icon="house" color="#4680ff" path="/" />
-                    <Item label="Clients" icon="people" color="#FC6180" path="/client" />
-                    <Item label="Products" icon="bag-plus" color="#7a52be" path="/products" />
-                    <Item label="Stock" icon="bar-chart" color="#93BE52" path="/stock" />
-                    <Item label="Users" icon="person-lock" color="#FFB64D" path="/login" />
-                    <Item label="Help" icon="question" color="#ff4646" path="/" />
+                { items.map((item, index) => <LeftMenuItem key={index} item={item} />) }
                 </ul>
+                <div className= "sidebar-item ">
+                    <div className="sidebar-title">
+                        
+                        <span href="">
+                             <i className="bi bi-gear"></i>
+                        </span>
+                        <span href="">
+                             TR   EN
+                        </span>
+                        <span href="">
+                             <i className="bi bi-box-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+               
             </section>
 }
 
@@ -53,7 +74,7 @@ const Item = (props) => {
         <li className={styles.item} onClick={redirect}>
             <div className={styles.iconContainer} style={{backgroundColor:props.color}}>
                 {/* <i className={"fa fa-"+props.icon} aria-hidden="true"></i> */}
-                <i className={"bi-"+props.icon}></i>
+                <i className={props.icon}></i>
             </div>
             <h3 className={styles.itemText}>{props.label}</h3>
         </li>
