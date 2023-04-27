@@ -19,6 +19,9 @@ a{
 .left-menu ul{
 padding-inline-start: 0px !important;
 }
+.left-menu svg{
+  margin-right: 2px !important;
+}
 .left-menu.mobile {
     left: -250px;
     position: relative;
@@ -26,6 +29,9 @@ padding-inline-start: 0px !important;
     transition: .6s ease all;
     padding-top: 10px;
 
+}
+.left-menu.mobile svg{
+  margin-right: 3px !important;
 }
 
 .left-menu.mobile.show {

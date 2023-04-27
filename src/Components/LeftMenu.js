@@ -6,13 +6,20 @@ import { useLogout } from '../Hooks/useLogout';
 import './LeftMenu.css';
 import styles from './styles.module.css'
 import LeftMenuItem from './LeftMenuItem';
-import { FaBeer } from 'react-icons/fa';
 import Icon from './icon'
+import {RiExchangeBoxLine,RiHandCoinLine, RiSendPlaneLine,RiSettings2Line,RiLogoutCircleRLine} from 'react-icons/ri';
+import {MdOutlineFolderOpen,MdOutlineQrCode } from 'react-icons/md';
+import {BiCartDownload } from 'react-icons/bi';
+import {BsCreditCard2Front, BsFiles } from 'react-icons/bs';
+import {TbFileStack} from 'react-icons/tb';
+ 
+
+
 const Navbar = () => {
     const menu = [
         {
             "title": "Banka Hesabı",
-            "icon": <FaBeer/>,
+            "icon": <MdOutlineFolderOpen />,
             "childrens": [
                 {
                     "title": "Hesap Aç",
@@ -26,7 +33,7 @@ const Navbar = () => {
         },
         {
             "title": "Finansman",
-            "icon": <FaBeer/>,
+            "icon": <RiHandCoinLine/>,
             "childrens": [
                 {
                     "title": "Başvuru",
@@ -41,7 +48,7 @@ const Navbar = () => {
         },
         {
             "title": "Kart",
-            "icon": <FaBeer/>,
+            "icon": <BsCreditCard2Front/>,
             "childrens": [
                 {
                     "title": "Banka Kartı",
@@ -57,7 +64,7 @@ const Navbar = () => {
         },
         {
             "title": "FX",
-            "icon": <FaBeer/>,
+            "icon": <RiExchangeBoxLine/>,
             "childrens": [
                 {
                     "title": "Döviz",
@@ -75,7 +82,7 @@ const Navbar = () => {
         },
         {
             "title": "EFT",
-            "icon": <FaBeer/>,
+            "icon": <RiSendPlaneLine/>,
             "childrens": [
                 {
                     "title": "EFT&FAST",
@@ -89,7 +96,7 @@ const Navbar = () => {
             ]
         }, {
             "title": "Fatura",
-            "icon": <FaBeer/>,
+            "icon": <TbFileStack/>,
             "childrens": [
                 {
                     "title": "Elektrik",
@@ -107,19 +114,20 @@ const Navbar = () => {
         },
         {
             "title": "Karekod",
-            "icon": <FaBeer/>,
+            "icon": <MdOutlineQrCode/>,
            
         },
         {
             "title": "Sanal Pos",
-             "icon": <FaBeer/>,
+             "icon": <BiCartDownload/>,
             
         },
         {
             "title": "Tüm Hesaplarım",
-            "icon": <FaBeer/>,
+            "icon": <BsFiles/>,
             
-        }
+        },
+       
     ];
 
     const [classState,setClassState] = useState("left-menu")
@@ -176,13 +184,13 @@ const Navbar = () => {
                     <div className="sidebar-title">
                         
                         <span href="">
-                             <i className="bi bi-gear"></i>
+                            <RiSettings2Line/>
                         </span>
                         <span href="">
                              TR   EN
                         </span>
                         <span href="">
-                             <i className="bi bi-box-arrow-right"></i>
+                            <RiLogoutCircleRLine/>
                         </span>
                     </div>
                 </div>
