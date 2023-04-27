@@ -21,18 +21,6 @@ const Navbar = () => {
         else setClassState("top-bar")
     }
 
-    const toggleLeftMenu = () => {
-
-        const leftMenu = document.querySelector("section.left-menu")
-        let classList = leftMenu.getAttribute("class")
-        if(classList.includes('show')) {
-            classList = "left-menu mobile"
-        }
-        else {
-            classList = "left-menu mobile show" 
-        }
-        leftMenu.setAttribute("class" , classList)
-    }
 
     useEffect(() => {
         window.addEventListener("resize",handleResizeFunc)
@@ -40,17 +28,12 @@ const Navbar = () => {
     })
 
     return <header className={classState}>
-        <div onClick={toggleLeftMenu}>
-            <Icon style={{fontSize: 30,
-    padding: "5px 10px",
-    margin: "auto 5px"}} icon="list" />
-        </div>
         <div>
             { user && (
                 <div className='virtual-pop-menu'>
                     <span>{user.data}</span>
                     {/* <button className="topbar-logout" onClick={handleClick}>Logout</button> */}
-                    <Button className={classState.includes("mobile") ? "virtual-pop-button" : ""} style={btnStyle} label="Logout" icon="box-arrow-right" onClick={handleClick} type="primary" />
+                    <Button className="virtual-pop-button" style={btnStyle} label="Rengin ALKAN" onClick={handleClick} type="primary" />
                 </div>
             )}
             { !user && (

@@ -44,9 +44,9 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
         { user && <LeftMenu />}
         {ready && <div style={innerPageStart} className={classState}>
+        <Navbar />
           <Routes>
             <Route path="/" exact element={user ? <Dashboard /> : <Navigate to="/login" />} />
             <Route path="/client" exact element={user ? <ClientManagement /> : <Navigate to="/login" />} />
@@ -55,6 +55,7 @@ export default function App() {
             <Route path="/*" element={<NoPage />} />
           </Routes>
         </div>}
+        
       </BrowserRouter>
     </div>
 

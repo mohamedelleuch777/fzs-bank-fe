@@ -7,7 +7,7 @@ import './LeftMenu.css';
 import styles from './styles.module.css'
 import LeftMenuItem from './LeftMenuItem';
 import { FaBeer } from 'react-icons/fa';
-
+import Icon from './icon'
 const Navbar = () => {
     const menu = [
         {
@@ -135,6 +135,18 @@ const Navbar = () => {
         }
         else setClassState("left-menu")
     }
+    const toggleLeftMenu = () => {
+
+        const leftMenu = document.querySelector("section.left-menu")
+        let classList = leftMenu.getAttribute("class")
+        if(classList.includes('show')) {
+            classList = "left-menu mobile"
+        }
+        else {
+            classList = "left-menu mobile show" 
+        }
+        leftMenu.setAttribute("class" , classList)
+    }
 
     useEffect(() => {
         window.addEventListener("resize",handleResizeFunc)
@@ -143,6 +155,11 @@ const Navbar = () => {
     
 
     return  <section className={classState}>
+                <div onClick={toggleLeftMenu}>
+                  <Icon style={{fontSize: 30,
+                    padding: "5px 10px",
+                    margin: "auto 5px"}} icon="list" />
+                 </div>
                 <div className= "sidebar-item setting">
                     <div className="sidebar-title menu-setting">
                         
