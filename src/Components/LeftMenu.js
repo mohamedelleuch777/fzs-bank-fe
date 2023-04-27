@@ -1,13 +1,126 @@
 // import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import React from 'react';
 import { useAuthContext } from '../Hooks/useAuthContext';
 import { useLogout } from '../Hooks/useLogout';
 import './LeftMenu.css';
 import styles from './styles.module.css'
 import LeftMenuItem from './LeftMenuItem';
-import items from './../data/LeftMenu.json'
+import { FaBeer } from 'react-icons/fa';
 
 const Navbar = () => {
+    const menu = [
+        {
+            "title": "Banka Hesabı",
+            "icon": <FaBeer/>,
+            "childrens": [
+                {
+                    "title": "Hesap Aç",
+                    "path": "/"
+                },
+                {
+                    "title": "Yönet",
+                    "path": "/"
+                }
+            ]
+        },
+        {
+            "title": "Finansman",
+            "icon": <FaBeer/>,
+            "childrens": [
+                {
+                    "title": "Başvuru",
+                    "path": "/"
+                },
+                {
+                    "title": "Yönet",
+                    "path": "/"
+                }
+               
+            ]
+        },
+        {
+            "title": "Kart",
+            "icon": <FaBeer/>,
+            "childrens": [
+                {
+                    "title": "Banka Kartı",
+                    "path": "/"
+                },
+                {
+                    "title": "Sanal Kart",
+                    "path": "/"
+                    
+                }
+               
+            ]
+        },
+        {
+            "title": "FX",
+            "icon": <FaBeer/>,
+            "childrens": [
+                {
+                    "title": "Döviz",
+                    "path": "/"
+                },
+                {
+                    "title": "Altın",
+                    "path": "/"   
+                },
+                {
+                    "title": "Gümüş",
+                    "path": "/"   
+                }
+            ]
+        },
+        {
+            "title": "EFT",
+            "icon": <FaBeer/>,
+            "childrens": [
+                {
+                    "title": "EFT&FAST",
+                    "path": "/"
+                },
+                {
+                    "title": "UPT",
+                    "path": "/"   
+                }
+                
+            ]
+        }, {
+            "title": "Fatura",
+            "icon": <FaBeer/>,
+            "childrens": [
+                {
+                    "title": "Elektrik",
+                    "path": "/"
+                },
+                {
+                    "title": "Doğalgaz",
+                    "path": "/"   
+                },
+                {
+                    "title": "Su",
+                    "path": "/"   
+                }
+            ]
+        },
+        {
+            "title": "Karekod",
+            "icon": <FaBeer/>,
+           
+        },
+        {
+            "title": "Sanal Pos",
+             "icon": <FaBeer/>,
+            
+        },
+        {
+            "title": "Tüm Hesaplarım",
+            "icon": <FaBeer/>,
+            
+        }
+    ];
 
     const [classState,setClassState] = useState("left-menu")
     const { logout } = useLogout();
@@ -27,6 +140,7 @@ const Navbar = () => {
         window.addEventListener("resize",handleResizeFunc)
         handleResizeFunc();
     })
+    
 
     return  <section className={classState}>
                 <div className= "sidebar-item setting">
@@ -39,7 +153,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <ul className={styles.listUL}>
-                { items.map((item, index) => <LeftMenuItem key={index} item={item} />) }
+                { menu.map((item, index) => <LeftMenuItem key={index} item={item} />) }
                 </ul>
                 <div className= "sidebar-item ">
                     <div className="sidebar-title">

@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { FaBeer } from 'react-icons/fa';
 export default function LeftMenuItem({item}){
     const [open, setOpen] = useState(false)
 
@@ -9,7 +9,7 @@ export default function LeftMenuItem({item}){
             <div className={open ? "sidebar-item open" : "sidebar-item"} >
                 <div className="sidebar-title">
                     <span>
-                        { item.icon && <i className={item.icon}></i> }
+                        { item.icon && item.icon }
                         {item.title}    
                     </span> 
                     <i className="bi-chevron-down toggle-btn" onClick={() => setOpen(!open)}></i>
@@ -24,7 +24,7 @@ export default function LeftMenuItem({item}){
         <div className= "sidebar-item">
             <div className="sidebar-title ">
                 <span href={item.path || "#"} className="">
-                    { item.icon && <i className={item.icon}></i> }
+                    { item.icon && item.icon }
                     {item.title}
             </span>
             </div>
