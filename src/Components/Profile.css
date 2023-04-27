@@ -4,9 +4,35 @@
     background-color: white;
     width: 1170px;
     margin: 30px;
+    padding: 30px;
+    height: fit-content;
+    border-radius: 5px;
 }
 .infos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 800px;
+    margin-top: 30px;
+
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.company-name{
+    font-size: 30px;
+    font-weight: 700;
+    color: #444a4a;
+}
+.company-name svg{
+    margin-right: 20px;
+    margin-bottom: -3px;
+}
+.title{
+    color: #389ca7 !important;
+}
+.element{
+    margin-top: 10px;
 }
