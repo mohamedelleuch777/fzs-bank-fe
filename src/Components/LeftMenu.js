@@ -165,14 +165,14 @@ const Navbar = () => {
     return  <section className={classState}>
                 <div onClick={toggleLeftMenu}>
                   <Icon style={{fontSize: 30,
-                    padding: "5px 10px",
+                    padding: "5px 10px",color:"white",
                     margin: "auto 5px"}} icon="list" />
                  </div>
                 <div className= "sidebar-item setting">
                     <div className="sidebar-title menu-setting">
                         
                         <span href="">
-                            FRONTEND LİMİTED 
+                            FRONTEND LİMİTED
                         </span>
                         
                     </div>
@@ -180,16 +180,16 @@ const Navbar = () => {
                 <ul className={styles.listUL}>
                 { menu.map((item, index) => <LeftMenuItem key={index} item={item} />) }
                 </ul>
-                <div className= "sidebar-item ">
+                <div className= "sidebar-item menu-bottom">
                     <div className="sidebar-title">
                         
                         <span href="">
                             <RiSettings2Line/>
                         </span>
                         <span href="">
-                             TR   EN
+                        <span className='lang'>TR</span> <span className='lang'>EN</span>
                         </span>
-                        <span href="">
+                        <span  className="logout" href="">
                             <RiLogoutCircleRLine/>
                         </span>
                     </div>

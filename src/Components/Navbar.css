@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap'); 
 .top-bar {
     top:0;
     position: fixed;
@@ -28,6 +29,8 @@
 }
 
 .virtual-pop-button {
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: 500;
     width: 180px !important;
     height: 60px !important;
     border-radius:unset;

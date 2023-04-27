@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
 a{
     text-decoration: none !important;
 }
@@ -7,7 +8,7 @@ a{
     max-width: 400px;
     height: calc(100vh - 0px);
     box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
-    background-image: linear-gradient(#79989B, #BAADA0);
+    background-image: linear-gradient(#485b5d, #cec5bc);
     z-index: 100;
     border-right: solid 2px #d2dee5;
     flex-shrink: 0;
@@ -20,7 +21,11 @@ a{
 padding-inline-start: 0px !important;
 }
 .left-menu svg{
-  margin-right: 2px !important;
+  margin-right: 20px !important;
+  margin-bottom: -2px;
+}
+.logout{
+  margin-right: -20px !important;
 }
 .left-menu.mobile {
     left: -250px;
@@ -76,8 +81,16 @@ padding-inline-start: 0px !important;
   }
   .menu-setting{
     color: black;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Jaldi', sans-serif;
   }
-
+  .menu-bottom{
+    font-family: 'Jaldi', sans-serif;
+    font-weight:normal;
+  }
+  .lang{
+    font-size: 16px;
+    margin-right: 10px;
+  }
   
 
