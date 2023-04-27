@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 1170px;
-    margin: 30px;
+    width: 1100px;
+    max-width: 1100px !important; 
+    margin: 40px !important;
     padding: 30px;
     height: fit-content;
     border-radius: 5px;
@@ -22,8 +23,8 @@
     flex-direction: column;
 }
 .company-name{
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight:normal;
     color: #444a4a;
 }
 .company-name svg{
@@ -35,4 +36,24 @@
 }
 .element{
     margin-top: 10px;
+}
+.fund-button{
+    background-color: #389ca7;
+    border-radius: 5px;
+    color: white;
+}
+.fund-info{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.investment{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#f1f4e9;
+    padding: 0 20px;
+    border-radius: 5px;
 }
