@@ -6,13 +6,12 @@ a{
     position: fixed;
     width: 300px;
     max-width: 400px;
-    height: calc(100vh - 0px);
+    height: 100vh ;
     box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
     background-image: linear-gradient(#485b5d, #cec5bc);
     z-index: 100;
     border-right: solid 2px #d2dee5;
     flex-shrink: 0;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

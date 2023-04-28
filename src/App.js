@@ -18,14 +18,18 @@ export default function App() {
 
   const innerPageStart = {
     position: "fixed",
-    width: user ? "calc(100vw - 280px)" : "100vw",
+    width: user ? "calc(100vw - 302px)" : "100vw",
     height: "calc(100vh - 60px)",
     left: user ? "302px" : "0",
     top: "60px",
     backgroundColor: "#f4f4f4",
     display: "flex",
+    flexDirection:"column",
     justifyContent: "center",
-    overflowY:"scroll"
+    overflowY:"scroll",
+    overflowX:"hidden",
+    
+    
   }
 
 
@@ -45,9 +49,9 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Navbar />
         { user && <LeftMenu />}
         {ready && <div style={innerPageStart} className={classState}>
-        <Navbar />
           <Routes>
             <Route path="/" exact element={user ? <Dashboard /> : <Navigate to="/login" />} />
             <Route path="/client" exact element={user ? <ClientManagement /> : <Navigate to="/login" />} />

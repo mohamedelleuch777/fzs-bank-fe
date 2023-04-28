@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap'); 
 .top-bar {
     top:0;
+    left: 302px;
     position: fixed;
-    width: 80vw;
+    width:calc(100vw - 302px);
     height: 60px;
     background-color: #fff;
     z-index: 101;

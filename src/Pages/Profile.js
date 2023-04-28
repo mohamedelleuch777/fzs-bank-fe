@@ -8,15 +8,11 @@ export default function Profile() {
     
       return (
          user && (
-            <div>
+            <>
                 <ProfileCardInfo/>
                 <ProfileFundCard/>
-                <div className="container">
-            <h1>this is dashboard page</h1>
-        </div>
-            </div>
-                  
-   
+            </>
+
          )
       );
 
