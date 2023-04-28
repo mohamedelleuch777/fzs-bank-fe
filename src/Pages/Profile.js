@@ -9,10 +9,14 @@ export default function Profile() {
       return (
          user && (
             <>
+                
                 <ProfileCardInfo/>
                 <ProfileFundCard/>
+                
             </>
-
+            
+                  
+   
          )
       );
 
