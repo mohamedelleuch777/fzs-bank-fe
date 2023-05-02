@@ -9,7 +9,7 @@ import Register from "./Pages/Register";
 import { useAuthContext } from "./Hooks/useAuthContext";
 import ClientManagement from "./Pages/Client_mgt";
 import Profile from "./Pages/Profile";
-
+import Setting from "./Pages/Setting"
 
 export default function App() {
   const [ready, setReady] = useState(false);
@@ -25,7 +25,6 @@ export default function App() {
     backgroundColor: "#f4f4f4",
     display: "flex",
     flexDirection:"column",
-    justifyContent: "center",
     overflowY:"scroll",
     overflowX:"hidden",
     
@@ -56,6 +55,7 @@ export default function App() {
             <Route path="/" exact element={user ? <Dashboard /> : <Navigate to="/login" />} />
             <Route path="/client" exact element={user ? <ClientManagement /> : <Navigate to="/login" />} />
             <Route path="/profile" exact element={user ? <Profile /> : <Navigate to="/login" />} />
+            <Route path="/setting" exact element={user ? <Setting /> : <Navigate to="/login" />} />
             <Route path="/login" exact element={!user ? <Login /> : <Navigate to="/" />} />
             <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />
             <Route path="/*" element={<NoPage />} />
