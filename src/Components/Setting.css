@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+.Tabs {
+    font-family: 'Cabin', sans-serif;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    box-sizing: border-box;
+    border: none !important;
+    margin: 20px 30px;
+    
+  }
+  
+  .react-tabs {
+    display: flex;
+    width: 100%;
+    color: black;
+  }
+  
+  .react-tabs__tab-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 20%;
+    color: white;
+    padding-inline-start: 0px !important;
+    margin-right: 10px;
+
+  }
+  
+  .react-tabs__tab {
+    list-style: none;
+    cursor: auto;
+    color: #474343;
+    font-weight: 700;
+    padding-left: 10px;
+
+    
+  }
+
+  .react-tabs__tab--selected {
+    background-color:#cec5bc;
+    color: black;
+  }
+  
+  .react-tabs__tab-panel {
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+  }
+  
+  .panel-content {
+    text-align: center;
+  }
+  

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import  './Setting.css'
 
  export default function SettingsTab() {
   return (
@@ -54,6 +55,16 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
         <TabPanel>
           <div className="panel-content">
             <h2>Any content 5</h2>
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className="panel-content">
+            <h2>Any content 6</h2>
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className="panel-content">
+            <h2>Any content 7</h2>
           </div>
         </TabPanel>
       </Tabs>
