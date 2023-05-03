@@ -19,10 +19,12 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: 20%;
     color: white;
     padding-inline-start: 0px !important;
-    margin-right: 10px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 16px;
 
   }
   
@@ -30,14 +32,18 @@
     list-style: none;
     cursor: auto;
     color: #474343;
-    font-weight: 700;
-    padding-left: 10px;
+    display: block;
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 20px;
+    box-sizing: border-box;
+    font-weight: 500;
 
     
   }
 
   .react-tabs__tab--selected {
-    background-color:#cec5bc;
+    background-color:#f5e7da;
     color: black;
   }
   
@@ -45,14 +51,51 @@
     display: none;
     width: 100%;
     border-radius: 5px;
-    background-color: white;
+    background-color:white;
+    color: #646262;
   }
   
   .react-tabs__tab-panel--selected {
     display: block;
   }
   
-  .panel-content {
-    text-align: center;
-  }
-  
+
+  /*Tab Memu Finish*/
+
+ /*AccountInfoTabCard Start*/
+ .account-card{
+    margin: 20px;
+    padding: 20px;
+ }
+ .account-form{
+    margin: 20px 0px;
+    background-color:#f5e7da;
+    padding: 20px 50px 20px 25px;
+    border-radius: 5px;
+   
+ }
+ .form-element{
+    width: 66%;
+
+ }
+ .account-form input{
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 12px 16px;
+    line-height: 24px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    background-color:white;
+ }
+.company-name{
+    font-size: 25px;
+    font-weight:normal;
+    color: #444a4a;
+}
+.account-form label{
+    font-size: 14px;
+}
+.form-element div{
+    margin: 15px 0px;
+}
