@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import  './Setting.css'
 import styles from './styles.module.css'
 import AccountInfoTabCard from './AccountInfoTabCard';
+import ProfileInfoTabCard from './ProfileInfoTabCard';
 
  export default function SettingsTab() {
   return (
@@ -41,7 +42,7 @@ import AccountInfoTabCard from './AccountInfoTabCard';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2>Any content 2</h2>
+            <h2><ProfileInfoTabCard/></h2>
           </div>
         </TabPanel>
         <TabPanel>

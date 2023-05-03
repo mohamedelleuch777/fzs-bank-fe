@@ -43,12 +43,13 @@
   }
 
   .react-tabs__tab--selected {
-    background-color:#f5e7da;
-    color: black;
+    background-color:#485b5d;
+    color: white;
   }
   
   .react-tabs__tab-panel {
     display: none;
+    height: fit-content;
     width: 100%;
     border-radius: 5px;
     background-color:white;
@@ -69,7 +70,7 @@
  }
  .account-form{
     margin: 20px 0px;
-    background-color:#f5e7da;
+    background-color:#f1f4e9;
     padding: 20px 50px 20px 25px;
     border-radius: 5px;
    
@@ -99,3 +100,28 @@
 .form-element div{
     margin: 15px 0px;
 }
+/*AccountInfoTabCard Finish*/
+/*ProfileInfoTabCard Start*/
+.profile-card{
+    margin: 20px;
+    padding: 20px;
+ }
+ .pass-change{
+    background-color: #f1f4e9;
+    margin: 20px 0px;
+    padding: 20px 50px 20px 25px;
+    border-radius: 5px;
+    line-height: 24px;
+    font-size: 15px;
+ }
+ .change{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: -20px 0px;
+ }
+ 
+ .change button{
+    width: fit-content;
+ }
