@@ -159,3 +159,27 @@
    width: 33.3333%;
    margin-top: 30px;
 }
+ /*CompanyInfoTabCard Finish*/
+/*BankAccountsTabCard Start*/
+.accounts-bank{
+   margin: 20px;
+   padding: 20px;
+   font-size: 16px; 
+   line-height: 140%;
+   color: rgb(80, 80, 80);
+   vertical-align: middle;
+}
+.accounts-bank h4, h5, h6{
+   margin-bottom: 20px;
+}
+.accounts-bank h6{
+   font-weight: 400;
+}
+.bank{
+   background-color: #f1f4e9;
+   margin: 20px 0px;
+   padding: 20px 50px 20px 25px;
+}
+.accounts-bank button {
+   width: 33.3333%;
+}

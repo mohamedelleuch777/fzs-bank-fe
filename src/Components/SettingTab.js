@@ -6,6 +6,7 @@ import styles from './styles.module.css'
 import AccountInfoTabCard from './AccountInfoTabCard';
 import ProfileInfoTabCard from './ProfileInfoTabCard';
 import CompanyInfoTabCard from './CompanyInfoTabCard';
+import BankAccountsTabCard from './BankAccountsTabCard';
 
  export default function SettingsTab() {
   return (
@@ -53,7 +54,7 @@ import CompanyInfoTabCard from './CompanyInfoTabCard';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2>Any content 4</h2>
+            <h2><BankAccountsTabCard/></h2>
           </div>
         </TabPanel>
         <TabPanel>
