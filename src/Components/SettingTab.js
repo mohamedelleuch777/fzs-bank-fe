@@ -7,6 +7,7 @@ import AccountInfoTabCard from './AccountInfoTabCard';
 import ProfileInfoTabCard from './ProfileInfoTabCard';
 import CompanyInfoTabCard from './CompanyInfoTabCard';
 import BankAccountsTabCard from './BankAccountsTabCard';
+import EddaHkTabCard from './EddaHkTabCard';
 
  export default function SettingsTab() {
   return (
@@ -59,7 +60,7 @@ import BankAccountsTabCard from './BankAccountsTabCard';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2>Any content 5</h2>
+            <h2><EddaHkTabCard/></h2>
           </div>
         </TabPanel>
         <TabPanel>
