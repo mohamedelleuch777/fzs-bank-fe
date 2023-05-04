@@ -5,6 +5,7 @@ import  './Setting.css'
 import styles from './styles.module.css'
 import AccountInfoTabCard from './AccountInfoTabCard';
 import ProfileInfoTabCard from './ProfileInfoTabCard';
+import CompanyInfoTabCard from './CompanyInfoTabCard';
 
  export default function SettingsTab() {
   return (
@@ -47,7 +48,7 @@ import ProfileInfoTabCard from './ProfileInfoTabCard';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2>Any content 3</h2>
+            <h2><CompanyInfoTabCard/></h2>
           </div>
         </TabPanel>
         <TabPanel>
