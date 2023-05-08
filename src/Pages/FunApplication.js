@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAuthContext } from "../Hooks/useAuthContext";
-import ProfileCardInfo from "../Components/ProfileInfoCard";
-import ProfileFundCard from "../Components/ProfileFundCard";
+import FunApplicationTabs from "../Components/FundApplicationTabs";
 export default function FundApplication() {
     const { user } = useAuthContext();
 
@@ -10,8 +9,7 @@ export default function FundApplication() {
          user && (
             <>
                 
-                <ProfileCardInfo/>
-                <ProfileFundCard/>
+                <FunApplicationTabs/>
                 
             </>
             

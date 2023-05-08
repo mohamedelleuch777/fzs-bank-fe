@@ -185,7 +185,7 @@ const Navbar = () => {
                     <div className="sidebar-title">
                         
                         <span href="">
-                            <RiSettings2Line/>
+                        <Link to="/setting"><RiSettings2Line/></Link>
                         </span>
                         <span href="">
                         <span className='lang'>TR</span> <span className='lang'>EN</span>
