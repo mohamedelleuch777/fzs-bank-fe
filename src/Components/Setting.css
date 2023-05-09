@@ -200,3 +200,13 @@
 .fa2 button{
    width: 200px !important;
 }
+.file-check{
+   display:block !important;
+}
+ .upload{
+   margin: 20px 0px;
+   background-color:#f1f4e9;
+   padding: 20px 50px 20px 25px;
+   border-radius: 5px;
+  
+}

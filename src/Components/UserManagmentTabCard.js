@@ -31,26 +31,26 @@ export default function UserManagmentTabCard() {
              <h5>Kullanıcı Kayıtları</h5>
              <div className='pass-change'>
              <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Email</th>
-      <th scope="col">Adı</th>
-      <th scope="col">Soyadı</th>
-      <th scope="col">Rolü</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>envisionfintech@gmail.com	</td>
-      <td>Mehmet</td>
-      <td>Bey</td>
-      <td>Müşteri</td>
-      <td><BsThreeDots/></td>
-    </tr>
-  
-  </tbody>
-</table>
+                <thead>
+                  <tr>
+                    <th scope="col">Email</th>
+                    <th scope="col">Adı</th>
+                    <th scope="col">Soyadı</th>
+                    <th scope="col">Rolü</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>envisionfintech@gmail.com	</td>
+                    <td>Mehmet</td>
+                    <td>Bey</td>
+                    <td>Müşteri</td>
+                    <td><BsThreeDots/></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
 
             
              </div>

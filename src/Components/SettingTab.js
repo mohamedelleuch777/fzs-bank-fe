@@ -9,6 +9,7 @@ import CompanyInfoTabCard from './CompanyInfoTabCard';
 import BankAccountsTabCard from './BankAccountsTabCard';
 import EddaHkTabCard from './EddaHkTabCard';
 import UserManagmentTabCard from './UserManagmentTabCard';
+import UploadTabCard from './UploadsTabCard';
 
 
  export default function SettingsTab() {
@@ -72,6 +73,7 @@ import UserManagmentTabCard from './UserManagmentTabCard';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
+            <UploadTabCard/>
           </div>
         </TabPanel>
       </Tabs>
