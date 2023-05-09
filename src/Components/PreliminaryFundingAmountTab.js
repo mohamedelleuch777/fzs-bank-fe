@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import  './FundApplication.css'
 import styles from './styles.module.css'
+import Button from './button';
 
 export default function PreliminaryFundingAmountTab() {
     return (
@@ -28,6 +29,7 @@ export default function PreliminaryFundingAmountTab() {
                             </div>
                         </div>
                         </div>
+                        <Button className="fund-button" label="Devam" />
                         
                     </div>
                 </form>

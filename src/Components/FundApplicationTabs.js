@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import  './FundApplication.css'
 import styles from './styles.module.css'
-
+import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
 
  export default function FunApplicationTabs() {
   return (
@@ -11,7 +11,9 @@ import styles from './styles.module.css'
     <h1>Fon Başvurusu</h1>
     
     <Tabs>
-    <div class="card1">
+   
+      <TabList>
+      <div class="card1">
          <ul id="progressbar" class="text-center">
            <li class="active step0"></li>
            <li class="step0"></li>
@@ -19,9 +21,8 @@ import styles from './styles.module.css'
            <li class="step0"></li>
            <li class="step0"></li>
            <li class="step0"></li>
-           <li class="step0"></li>
+         
          </ul>
-      <TabList>
         <Tab>
           <p>İşletme Bilgileri</p>
         </Tab>
@@ -40,14 +41,11 @@ import styles from './styles.module.css'
         <Tab>
           <p>Kullanıcı Yönetimi</p>
         </Tab>
-        <Tab>
-          <p>Yüklemeler</p>
-        </Tab>
+        </div>
       </TabList>
-    </div>
       <TabPanel>
         <div className="panel-content">
-          
+            
         </div>
       </TabPanel>
       <TabPanel>
@@ -72,11 +70,6 @@ import styles from './styles.module.css'
       </TabPanel>
       <TabPanel>
         <div className="panel-content">
-        </div>
-      </TabPanel>
-      <TabPanel>
-        <div className="panel-content">
-          <h2>Any content 7</h2>
         </div>
       </TabPanel>
     </Tabs>

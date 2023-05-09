@@ -54,7 +54,7 @@ export default function FunApplicationBusinessTab() {
                             </div>
                         </div>
                         </div>
-                        
+                        <Button className="fund-button" label="Finansman Tutarını Kontrol Edin" />
                     </div>
                 </form>
             </div>

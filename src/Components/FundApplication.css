@@ -1,38 +1,29 @@
 
 
 .card1 {
-    margin-left: 140px;
+    margin-left: 40px;
     z-index: 0;
     border-right: 1px solid #F5F5F5
 }
-
-.card2 {
-    display: none
-}
-
-.card2.show {
-    display: block
-}
-
 #progressbar {
     position: absolute;
-    left: 35px;
+    left: -5px;
     overflow: hidden;
-    color: #E53935
+    color: #485b5d
 }
 
 #progressbar li {
     list-style-type: none;
     font-size: 8px;
     font-weight: 400;
-    margin-bottom: 30px
+    margin-bottom: 27px
 }
 
 
 
 #progressbar .step0:before {
     content: "";
-    color: #fff
+    color: white
 }
 
 #progressbar li:before {
@@ -42,7 +33,7 @@
     display: block;
     font-size: 20px;
     background: #fff;
-    border: 2px solid #E53935;
+    border: 2px solid #485b5d;
     border-radius: 50%;
     margin: auto
 }
@@ -52,10 +43,10 @@
 #progressbar li:after {
     content: '';
     width: 3px;
-    height: 66px;
-    background: #BDBDBD;
+    height: 300px;
+    background: #485b5d;
     position: absolute;
-    left: 58px;
+    left: 45px;
     top: 15px;
     z-index: -1
 }
@@ -72,11 +63,11 @@
 }
 
 #progressbar li.active:after {
-    background: #E53935
+    background: #485b5d
 }
 
 #progressbar li.active:before {
-    background: #E53935;
+    background: #485b5d;
     font-family: FontAwesome;
     content: "\f00c"
 }
@@ -95,41 +86,10 @@
 }
 
 .prev:hover {
-    color: #D50000 !important
+    color: #f1f4e9 !important
 }
 
-@media screen and (max-width: 912px) {
-    .card00 {
-        padding-top: 30px
-    }
 
-    .card1 {
-        border: none;
-        margin-left: 50px
-    }
-
-    .card2 {
-        border-bottom: 1px solid #F5F5F5;
-        margin-bottom: 25px
-    }
-
-    .social {
-        height: 30px;
-        width: 30px;
-        font-size: 15px;
-        padding-top: 8px;
-        margin-top: 7px
-    }
-
-    .get-bonus {
-        margin-top: 40px !important;
-        margin-left: 75px
-    }
-
-    #progressbar {
-        left: -25px
-    }
-}
 .account-card{
     margin: 20px;
     padding: 20px;

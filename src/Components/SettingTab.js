@@ -9,7 +9,7 @@ import CompanyInfoTabCard from './CompanyInfoTabCard';
 import BankAccountsTabCard from './BankAccountsTabCard';
 import EddaHkTabCard from './EddaHkTabCard';
 import UserManagmentTabCard from './UserManagmentTabCard';
-import PreliminaryFundingAmountTab from './PreliminaryFundingAmountTab';
+
 
  export default function SettingsTab() {
   return (
@@ -72,7 +72,6 @@ import PreliminaryFundingAmountTab from './PreliminaryFundingAmountTab';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-           <PreliminaryFundingAmountTab />
           </div>
         </TabPanel>
       </Tabs>
