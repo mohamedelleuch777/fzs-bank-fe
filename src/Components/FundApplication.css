@@ -130,3 +130,121 @@
         left: -25px
     }
 }
+.account-card{
+    margin: 20px;
+    padding: 20px;
+ }
+ .account-form{
+    margin: 20px 0px;
+    background-color:#f1f4e9;
+    padding: 20px 50px 20px 25px;
+    border-radius: 5px;
+   
+ }
+ .form-element{
+    width: 66%;
+
+ }
+ .amount{
+    width: 66%;
+ }
+ .amount label{
+    margin-bottom: 10px;
+ }
+ .account-form input{
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 12px 16px;
+    line-height: 24px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    background-color:white;
+ }
+ .account-form select{
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 12px 16px;
+    line-height: 24px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    background-color:white;
+ }
+.company-name{
+    font-size: 25px;
+    font-weight:normal;
+    color: #444a4a;
+}
+.account-form label{
+    font-size: 14px;
+}
+.form-element div{
+    margin: 15px 0px;
+}
+.accardion{
+    padding: 20px 20px 20px 25px;
+    background-color: #f1f4e9;
+    border-radius: 5px;
+}
+
+  
+  .faq-drawer__content-wrapper {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.4em;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+  }
+  
+  .faq-drawer__title {
+    border-bottom: #b6b4b4 1px solid;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0 0 0;
+    position: relative;
+    margin-bottom: 0;
+    transition: all 0.25s ease-out;
+  }
+  
+  .faq-drawer__title::after {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: " ";
+    display: inline-block;
+    float: right;
+    height: 10px;
+    left: 2px;
+    position: relative;
+    right: 20px;
+    top: 2px;
+    transform: rotate(135deg);
+    transition: 0.35s ease-in-out;
+    vertical-align: top;
+    width: 10px;
+  }
+  
+  /* OPTIONAL HOVER STATE */
+  .faq-drawer__title:hover { 
+    color: #4E4B52  ;
+  }
+  
+  .faq-drawer__trigger:checked
+    + .faq-drawer__title
+    + .faq-drawer__content-wrapper {
+    max-height: 350px;
+  }
+  
+  .faq-drawer__trigger:checked + .faq-drawer__title::after {
+    transform: rotate(-45deg);
+    transition: 0.25s ease-in-out;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  
