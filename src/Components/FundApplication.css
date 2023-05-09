@@ -1,0 +1,132 @@
+
+
+.card1 {
+    margin-left: 140px;
+    z-index: 0;
+    border-right: 1px solid #F5F5F5
+}
+
+.card2 {
+    display: none
+}
+
+.card2.show {
+    display: block
+}
+
+#progressbar {
+    position: absolute;
+    left: 35px;
+    overflow: hidden;
+    color: #E53935
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 30px
+}
+
+
+
+#progressbar .step0:before {
+    content: "";
+    color: #fff
+}
+
+#progressbar li:before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 20px;
+    background: #fff;
+    border: 2px solid #E53935;
+    border-radius: 50%;
+    margin: auto
+}
+
+
+
+#progressbar li:after {
+    content: '';
+    width: 3px;
+    height: 66px;
+    background: #BDBDBD;
+    position: absolute;
+    left: 58px;
+    top: 15px;
+    z-index: -1
+}
+
+
+
+#progressbar li:nth-child(2):after {
+    top: 0px
+}
+
+#progressbar li:first-child:after {
+    position: absolute;
+    top: -81px
+}
+
+#progressbar li.active:after {
+    background: #E53935
+}
+
+#progressbar li.active:before {
+    background: #E53935;
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+.tick {
+    width: 100px;
+    height: 100px
+}
+
+.prev {
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    cursor: pointer
+}
+
+.prev:hover {
+    color: #D50000 !important
+}
+
+@media screen and (max-width: 912px) {
+    .card00 {
+        padding-top: 30px
+    }
+
+    .card1 {
+        border: none;
+        margin-left: 50px
+    }
+
+    .card2 {
+        border-bottom: 1px solid #F5F5F5;
+        margin-bottom: 25px
+    }
+
+    .social {
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+        padding-top: 8px;
+        margin-top: 7px
+    }
+
+    .get-bonus {
+        margin-top: 40px !important;
+        margin-left: 75px
+    }
+
+    #progressbar {
+        left: -25px
+    }
+}
