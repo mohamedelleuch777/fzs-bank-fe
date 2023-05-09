@@ -9,6 +9,7 @@ import CompanyInfoTabCard from './CompanyInfoTabCard';
 import BankAccountsTabCard from './BankAccountsTabCard';
 import EddaHkTabCard from './EddaHkTabCard';
 import UserManagmentTabCard from './UserManagmentTabCard';
+import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
 
  export default function SettingsTab() {
   return (
@@ -41,37 +42,37 @@ import UserManagmentTabCard from './UserManagmentTabCard';
 
         <TabPanel>
           <div className="panel-content">
-            <h4><AccountInfoTabCard/></h4>
+            <AccountInfoTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2><ProfileInfoTabCard/></h2>
+            <ProfileInfoTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2><CompanyInfoTabCard/></h2>
+            <CompanyInfoTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2><BankAccountsTabCard/></h2>
+            <BankAccountsTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2><EddaHkTabCard/></h2>
+            <EddaHkTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2><UserManagmentTabCard/></h2>
+            <UserManagmentTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <h2>Any content 7</h2>
+           <FunApplicationBusinessTab />
           </div>
         </TabPanel>
       </Tabs>

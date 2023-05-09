@@ -8,7 +8,7 @@ import styles from './styles.module.css'
  export default function FunApplicationTabs() {
   return (
     <div className="Tabs">
-    <h1>Ayarlar</h1>
+    <h1>Fon Başvurusu</h1>
     
     <Tabs>
     <div class="card1">
@@ -23,7 +23,7 @@ import styles from './styles.module.css'
          </ul>
       <TabList>
         <Tab>
-          <p>Hesap Bilgileri</p>
+          <p>İşletme Bilgileri</p>
         </Tab>
         <Tab>
           <p>Profil Bilgileri</p>
