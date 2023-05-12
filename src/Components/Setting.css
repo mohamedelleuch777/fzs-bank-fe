@@ -210,3 +210,7 @@
    border-radius: 5px;
   
 }
+.cancel{
+   background-color: white !important;
+   color: #389ca7 !important;
+}

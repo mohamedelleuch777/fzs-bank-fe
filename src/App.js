@@ -12,6 +12,7 @@ import Profile from "./Pages/Profile";
 import Setting from "./Pages/Setting";
 import FundApplication from "./Pages/FunApplication";
 
+
 export default function App() {
   const [ready, setReady] = useState(false);
   const { user } = useAuthContext();
