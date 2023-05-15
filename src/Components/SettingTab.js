@@ -10,7 +10,9 @@ import BankAccountsTabCard from './BankAccountsTabCard';
 import EddaHkTabCard from './EddaHkTabCard';
 import UserManagmentTabCard from './UserManagmentTabCard';
 import UploadTabCard from './UploadsTabCard';
-import ChangePass from './ChangePassWord';
+import ChangePass from './ChangePassWord'
+import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
+import PreliminaryFundingAmountTab from './PreliminaryFundingAmountTab';
 
 
  export default function SettingsTab() {
@@ -44,12 +46,12 @@ import ChangePass from './ChangePassWord';
 
         <TabPanel>
           <div className="panel-content">
-            <AccountInfoTabCard/>
+            <PreliminaryFundingAmountTab/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <ChangePass/>
+            <FunApplicationBusinessTab/>
           </div>
         </TabPanel>
         <TabPanel>
