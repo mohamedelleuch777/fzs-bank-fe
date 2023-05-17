@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import  './FundApplication.css'
+import Button from './button';
 import styles from './styles.module.css'
 
 export default function FunApplicationBusinessTab() {
