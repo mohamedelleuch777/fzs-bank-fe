@@ -4,7 +4,8 @@ import  './modal.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-
+import { Link } from 'react-router-dom';
+import {MdOutlineEnhancedEncryption } from 'react-icons/md';
  
 function AddBankAccount({ setOpenModal }) {
     const handleClose = () => setOpenModal(false);
@@ -12,34 +13,34 @@ function AddBankAccount({ setOpenModal }) {
     return (
         <Modal show={handleShow} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className='content'>
+          <h3>Banka Hesabı Ekle</h3>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
+              <Form.Select
                 autoFocus
               />
             </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
+            <p style={{marginLeft:"18px 0px"}}>Bankanızı arayamıyor musunuz? <Link>Buraya manuel olarak ekleyin</Link></p>
+            <div className='btns'>
+              <Button className=" bt fund-button cancel"  onClick={handleClose}>
+                 Vazgeç
+              </Button>
+              <Button className=" bt fund-button" style={{marginLeft:"16px"}} onClick={handleClose}>
+                 Devam
+              </Button>
+            </div>
+ 
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
+            <div className='info'>
+              <span>
+                <MdOutlineEnhancedEncryption/>
+               Bilgilerinizin aktarımı uçtan uca şifrelenir
+              </span>
+            </div>
         </Modal.Footer>
       </Modal>
      
