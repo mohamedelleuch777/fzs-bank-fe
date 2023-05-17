@@ -6,9 +6,8 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { Link } from 'react-router-dom';
 import {MdOutlineEnhancedEncryption } from 'react-icons/md';
-import ManuelAddBankAccount from './ManuelAddBankAccount'
  
-function AddBankAccount({ setOpenModal }) {
+function ManuelAddBankAccount({ setOpenModal }) {
   const [bankModalOpened, setBankModalOpened] = useState(false);
     const handleClose = () => setOpenModal(false);
     const handleShow = () => setOpenModal(true);
@@ -17,7 +16,7 @@ function AddBankAccount({ setOpenModal }) {
         <Modal.Header closeButton>
         </Modal.Header>
         <Modal.Body className='content'>
-          <h3>Banka Hesabı Ekle</h3>
+          <h3> Manuel Banka Hesabı Ekle</h3>
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Select
@@ -33,7 +32,7 @@ function AddBankAccount({ setOpenModal }) {
                  Devam
               </Button>
             </div>
-            {bankModalOpened && <ManuelAddBankAccount  setOpenModal={setBankModalOpened}/>}
+            
  
           </Form>
         </Modal.Body>
@@ -50,4 +49,4 @@ function AddBankAccount({ setOpenModal }) {
     );
   }
   
-  export default AddBankAccount;
+  export default ManuelAddBankAccount;
