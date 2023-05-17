@@ -70,7 +70,7 @@
  }
  .account-form{
     margin: 20px 0px;
-    background-color:#f1f4e9;
+    background-image: linear-gradient(#f1f4f5, #f8f6f5);
     padding: 20px 50px 20px 25px;
     border-radius: 5px;
    
@@ -107,7 +107,7 @@
     padding: 20px;
  }
  .pass-change{
-    background-color: #f1f4e9;
+   background-image: linear-gradient(#f1f4f5, #f8f6f5);
     margin: 20px 0px;
     padding: 20px 50px 20px 25px;
     border-radius: 5px;
@@ -133,7 +133,7 @@
    font-size: 16px;
 }
 .company-info{
-   background-color: #f1f4e9;
+   background-image: linear-gradient(#f1f4f5, #f8f6f5);
    margin: 20px 0px;
    padding: 20px 50px 20px 25px;
    border-radius: 5px;
@@ -176,7 +176,7 @@
    font-weight: 400;
 }
 .bank{
-   background-color: #f1f4e9;
+   background-image: linear-gradient(#f1f4f5, #f8f6f5);
    margin: 20px 0px;
    padding: 20px 50px 20px 25px;
 }
@@ -205,7 +205,7 @@
 }
  .upload{
    margin: 20px 0px;
-   background-color:#f1f4e9;
+   background-image: linear-gradient(#f1f4f5, #f8f6f5);
    padding: 20px 50px 20px 25px;
    border-radius: 5px;
   
