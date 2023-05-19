@@ -21,7 +21,7 @@ export default function UserManagmentTabCard() {
                             <input className='form-control' type="email" name="email" />
                         </div>
                         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
-                            <Button  style={{width:"49%"}} className="fund-button" label="Şifre Değiştir" />
+                            <Button  style={{width:"49%"}} className="fund-button" label="Davet Gönder" />
                             <Button style={{width:"49%"}} className="fund-button cancel" label="Vazgeç" />
                         </div>
                        
