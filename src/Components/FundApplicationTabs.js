@@ -35,13 +35,13 @@ import AppForFunding from './AppForFund';
           <p>Finansman İçin Başvur</p>
         </Tab>
         <Tab>
-          <p>Banka Hesapları</p>
+          <p>Başvuru Özeti</p>
         </Tab>
         <Tab>
-          <p>eDDA HK</p>
+          <p>Gelir Doğrulama</p>
         </Tab>
         <Tab>
-          <p>Kullanıcı Yönetimi</p>
+          <p>Finansman Kabul Et</p>
         </Tab>
         </div>
       </TabList>

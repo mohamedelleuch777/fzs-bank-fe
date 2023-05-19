@@ -218,4 +218,16 @@
     margin: 20px 0px;
 }
 
+ .bank{
+    background-color: white;
+    margin: 20px 0px;
+    padding: 20px 50px 20px 25px;
+ }
+ .ac button {
+    width: 33.3333%;
+ }
+ .ac h4{
+    margin-top: 20px;
+ }
+
   

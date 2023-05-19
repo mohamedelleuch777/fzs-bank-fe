@@ -161,28 +161,7 @@
 }
  /*CompanyInfoTabCard Finish*/
 /*BankAccountsTabCard Start*/
-.accounts-bank{
-   margin: 20px;
-   padding: 20px;
-   font-size: 16px; 
-   line-height: 140%;
-   color: rgb(80, 80, 80);
 
-}
-.accounts-bank h4, h5, h6{
-   margin-bottom: 20px;
-}
-.accounts-bank h6{
-   font-weight: 400;
-}
-.bank{
-   background-image: linear-gradient(#f1f4f5, #f8f6f5);
-   margin: 20px 0px;
-   padding: 20px 50px 20px 25px;
-}
-.accounts-bank button {
-   width: 33.3333%;
-}
  /*BankAccountsTabCard Finish*/
 .eddahk{
    margin: 20px;

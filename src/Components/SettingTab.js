@@ -28,12 +28,6 @@ import ChangePass from './ChangePassWord'
             <p>Şirket Bilgileri</p>
           </Tab>
           <Tab>
-            <p>Banka Hesapları</p>
-          </Tab>
-          <Tab>
-            <p>eDDA HK</p>
-          </Tab>
-          <Tab>
             <p>Kullanıcı Yönetimi</p>
           </Tab>
           <Tab>
@@ -54,16 +48,6 @@ import ChangePass from './ChangePassWord'
         <TabPanel>
           <div className="panel-content">
             <CompanyInfoTabCard/>
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="panel-content">
-            <BankAccountsTabCard/>
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="panel-content">
-            <EddaHkTabCard/>
           </div>
         </TabPanel>
         <TabPanel>

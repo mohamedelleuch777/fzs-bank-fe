@@ -19,21 +19,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const menu = [
         {
-            "title": "Banka Hesabı",
-            "icon": <MdOutlineFolderOpen />,
-            "childrens": [
-                {
-                    "title": "Hesap Aç",
-                    "path": "/"
-                },
-                {
-                    "title": "Yönet",
-                    "path": "/"
-                }
-            ]
-        },
-        {
-            "title": "Finansman",
+            "title": "E-Ticaret Finansmanı",
             "path": "/fund-app",
             "icon": <RiHandCoinLine/>,
             "childrens": [
@@ -49,20 +35,24 @@ const Navbar = () => {
             ]
         },
         {
-            "title": "Kart",
-            "icon": <BsCreditCard2Front/>,
+            "title": "Banka Hesabı",
+            "icon": <MdOutlineFolderOpen />,
             "childrens": [
                 {
-                    "title": "Banka Kartı",
+                    "title": "Hesap Aç",
                     "path": "/"
                 },
                 {
-                    "title": "Sanal Kart",
+                    "title": "Yönet",
                     "path": "/"
-                    
                 }
-               
             ]
+        },
+       
+        {
+            "title": "Sanal Kart",
+            "icon": <BsCreditCard2Front/>,
+          
         },
         {
             "title": "FX",
@@ -93,6 +83,10 @@ const Navbar = () => {
                 {
                     "title": "UPT",
                     "path": "/"   
+                }, 
+                {
+                    "title": "Kolay Adres",
+                    "path": "/"   
                 }
                 
             ]
@@ -101,15 +95,27 @@ const Navbar = () => {
             "icon": <TbFileStack/>,
             "childrens": [
                 {
-                    "title": "Elektrik",
+                    "title": "Doğalgaz",
                     "path": "/"
                 },
                 {
-                    "title": "Doğalgaz",
+                    "title": "Elektrik",
                     "path": "/"   
                 },
                 {
                     "title": "Su",
+                    "path": "/"   
+                },
+                {
+                    "title": "Telefon",
+                    "path": "/"   
+                },
+                {
+                    "title": "İnternet",
+                    "path": "/"   
+                },
+                {
+                    "title": "TV",
                     "path": "/"   
                 }
             ]

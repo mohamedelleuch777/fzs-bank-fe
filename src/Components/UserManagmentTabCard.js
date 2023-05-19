@@ -12,21 +12,22 @@ export default function UserManagmentTabCard() {
             <h5>Kullanıcı Yönetimi</h5>
              <div className='pass-change'>
                 <div>
-                    <span className='company-name'>Hesap Genelinde İki Faktörlü Kimlik Doğrulaması {"(2FA)"}</span>
-                </div>
-                <div className='fa2'>
-                    <span>Hesap genelinde 2FA'yı etkinleştirmek için lütfen önce kendi 2FA'nızı ayarlayın. Kurulduktan sonra, her oturum açma için 2FA gerekli olacaktır</span>
-                    <Button className="fund-button " label="2FA Kurulumu" />
-                </div>
-             </div>
-             <div className='pass-change'>
-                <div>
                     <span className='company-name'>Kullanıcı Yönetimi</span>
                 </div>
-                <div className='fa2'>
-                    <span>Kuruluşunuzdaki kullanıcıları davet edin</span>
-                    <Button className="fund-button" label="Şifre Değiştir" />
-                </div>
+                <form>
+                    <div className='form-element'>
+                        <div>
+                            <label style={{marginBottom:"10px"}}>İş Eposta Adresi</label>
+                            <input className='form-control' type="email" name="email" />
+                        </div>
+                        <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
+                            <Button  style={{width:"49%"}} className="fund-button" label="Şifre Değiştir" />
+                            <Button style={{width:"49%"}} className="fund-button cancel" label="Vazgeç" />
+                        </div>
+                       
+                   
+                    </div>
+                </form>
              </div>
              <h5>Kullanıcı Kayıtları</h5>
              <div className='pass-change'>
@@ -34,6 +35,7 @@ export default function UserManagmentTabCard() {
                 <thead>
                   <tr>
                     <th scope="col">Email</th>
+                    <th scope="col">Telefon</th>
                     <th scope="col">Adı</th>
                     <th scope="col">Soyadı</th>
                     <th scope="col">Rolü</th>
@@ -43,6 +45,7 @@ export default function UserManagmentTabCard() {
                 <tbody>
                   <tr>
                     <td>envisionfintech@gmail.com	</td>
+                    <td>5467374945</td>
                     <td>Mehmet</td>
                     <td>Bey</td>
                     <td>Müşteri</td>
