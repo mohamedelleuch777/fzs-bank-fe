@@ -18,32 +18,63 @@ function ManuelAddBankAccount({ setOpenModal }) {
         <Modal.Body className='content'>
           <h3> Manuel Banka Hesabı Ekle</h3>
           <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3 forms" controlId="exampleForm.ControlInput1">
               <Form.Select
+                autoFocus
+                placeholder="Ülke"
+              />
+              <Form.Control
+                type="text"
+                placeholder="SWIFT/BIC"
                 autoFocus
               />
             </Form.Group>
-            <p style={{marginLeft:"18px 0px"}}>Bankanızı arayamıyor musunuz? <Link onClick={() => setBankModalOpened(true)}>Buraya manuel olarak ekleyin</Link></p>
+            <Form.Group className="mb-3 forms" controlId="exampleForm.ControlInput1">
+              <Form.Select
+                autoFocus
+                placeholder="Para Birimi"
+              />
+              <Form.Control
+                type="text"
+                placeholder="ör. ABD Doları Birikim Hesabı"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
+              <Form.Control
+                type="text"
+                placeholder="Banka Adı"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
+              <Form.Control
+                type="text"
+                placeholder="Hesap Sahibinin Adı"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
+              <Form.Control
+                type="text"
+                placeholder="Hesap Numarası"
+                autoFocus
+              />
+            </Form.Group>
+            
             <div className='btns'>
-              <Button className=" bt fund-button cancel"  onClick={handleClose}>
+              <Button className=" bt fund-button"  onClick={handleClose}>
+                 Banka Hesabı Ekle
+              </Button>
+              <Button className=" bt fund-button cancel" style={{marginLeft:"32px"}}  onClick={handleClose}>
                  Vazgeç
               </Button>
-              <Button className=" bt fund-button" style={{marginLeft:"16px"}} onClick={handleClose}>
-                 Devam
-              </Button>
+              
             </div>
             
  
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-            <div className='info'>
-              <span>
-                <MdOutlineEnhancedEncryption/>
-               Bilgilerinizin aktarımı uçtan uca şifrelenir
-              </span>
-            </div>
-        </Modal.Footer>
       </Modal>
      
     );
