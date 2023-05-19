@@ -34,11 +34,12 @@ const Navbar = () => {
         },
         {
             "title": "Finansman",
+            "path": "/fund-app",
             "icon": <RiHandCoinLine/>,
             "childrens": [
                 {
                     "title": "Başvuru",
-                    "path": "/"
+                    "path": <Link to="/fund-app"/>,
                 },
                 {
                     "title": "Yönet",
