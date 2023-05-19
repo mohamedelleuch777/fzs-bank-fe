@@ -4,6 +4,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import  './FundApplication.css'
 import styles from './styles.module.css'
 import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
+import PreliminaryFundingAmountTab from './PreliminaryFundingAmountTab';
+import AppForFunding from './AppForFund';
 
  export default function FunApplicationTabs() {
   return (
@@ -27,10 +29,10 @@ import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
           <p>İşletme Bilgileri</p>
         </Tab>
         <Tab>
-          <p>Profil Bilgileri</p>
+          <p>Ön Finansman Tutarı</p>
         </Tab>
         <Tab>
-          <p>Şirket Bilgileri</p>
+          <p>Finansman İçin Başvur</p>
         </Tab>
         <Tab>
           <p>Banka Hesapları</p>
@@ -45,17 +47,17 @@ import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
       </TabList>
       <TabPanel>
         <div className="panel-content">
-            
+            <FunApplicationBusinessTab/>
         </div>
       </TabPanel>
       <TabPanel>
         <div className="panel-content">
-         
+        <PreliminaryFundingAmountTab/>
         </div>
       </TabPanel>
       <TabPanel>
         <div className="panel-content">
-         
+         <AppForFunding/>
         </div>
       </TabPanel>
       <TabPanel>

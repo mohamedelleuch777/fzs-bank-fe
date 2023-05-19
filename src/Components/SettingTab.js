@@ -11,9 +11,6 @@ import EddaHkTabCard from './EddaHkTabCard';
 import UserManagmentTabCard from './UserManagmentTabCard';
 import UploadTabCard from './UploadsTabCard';
 import ChangePass from './ChangePassWord'
-import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
-import PreliminaryFundingAmountTab from './PreliminaryFundingAmountTab';
-
 
  export default function SettingsTab() {
   return (
