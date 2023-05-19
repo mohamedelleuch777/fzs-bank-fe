@@ -30,15 +30,15 @@ export default function FunApplicationBusinessTab() {
                         </div>
                         <div>
                             <label>Kuruldukları Ülkeler</label>
-                            <input className='form-control' type="text" name="country" />
+                            <select className='form-control form-select'  name="country" ></select>
                         </div>
                         <div>
                             <label>Çevrimiçi gelir elde ediyor musunuz?</label>
-                            <input className='form-control' type="text" name="revenue" />
+                            <select className='form-control form-select'  name="revenue" ></select>
                         </div>
                         <div>
                             <label>Gelirinizin çoğunluğu hangi ülkeden geliyor?</label>
-                            <input className='form-control' type="text" name="majority-revenue" />
+                            <input className='form-control form-select'  name="majority-revenue" />
                         </div>
                         <div>
                         <label>İstediğiniz fonlama tutarını girin *</label>

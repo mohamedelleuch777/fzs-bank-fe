@@ -46,12 +46,12 @@ import PreliminaryFundingAmountTab from './PreliminaryFundingAmountTab';
 
         <TabPanel>
           <div className="panel-content">
-            <PreliminaryFundingAmountTab/>
+            <AccountInfoTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <FunApplicationBusinessTab/>
+            <ProfileInfoTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
