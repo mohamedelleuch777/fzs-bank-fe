@@ -173,7 +173,7 @@
 .fa2{
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: flex-end;
    align-items: center;
 }
 .fa2 button{
@@ -192,4 +192,9 @@
 .cancel{
    background-color: white !important;
    color: #389ca7 !important;
+}
+.add{
+   background-color:#646262 !important;
+   color: white !important;
+   margin-right: 10px;
 }

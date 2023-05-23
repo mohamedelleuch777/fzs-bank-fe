@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
  
-function ManuelAddBankAccount({ setOpenModal }) {
+function AddFile({ setOpenModal }) {
     const handleClose = () => setOpenModal(false);
     const handleShow = () => setOpenModal(true);
     return (
@@ -14,55 +14,25 @@ function ManuelAddBankAccount({ setOpenModal }) {
         <Modal.Header closeButton>
         </Modal.Header>
         <Modal.Body className='content'>
-          <h3> Manuel Banka Hesabı Ekle</h3>
+          <h3>Belge Ekle</h3>
           <Form>
-            <Form.Group className="mb-3 forms" controlId="exampleForm.ControlInput1">
-              <Form.Select
-                autoFocus
-                placeholder="Ülke"
-              />
+            <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
               <Form.Control
                 type="text"
-                placeholder="SWIFT/BIC"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group className="mb-3 forms" controlId="exampleForm.ControlInput1">
-              <Form.Select
-                autoFocus
-                placeholder="Para Birimi"
-              />
-              <Form.Control
-                type="text"
-                placeholder="ör. ABD Doları Birikim Hesabı"
+                placeholder="Belge Adı"
                 autoFocus
               />
             </Form.Group>
             <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
               <Form.Control
-                type="text"
-                placeholder="Banka Adı"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
+                type="file"
                 placeholder="Hesap Sahibinin Adı"
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                placeholder="Hesap Numarası"
-                autoFocus
-              />
-            </Form.Group>
-            
             <div className='btns'>
               <Button className=" bt fund-button"  onClick={handleClose}>
-                 Banka Hesabı Ekle
+                 Belge Ekle
               </Button>
               <Button className=" bt fund-button cancel" style={{marginLeft:"32px"}}  onClick={handleClose}>
                  Vazgeç
@@ -78,4 +48,4 @@ function ManuelAddBankAccount({ setOpenModal }) {
     );
   }
   
-  export default ManuelAddBankAccount;
+  export default AddFile;

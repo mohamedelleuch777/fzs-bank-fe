@@ -1,16 +1,24 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import{FaCertificate}from 'react-icons/fa';
 import  './Setting.css'
 import styles from './styles.module.css'
 import Button from './button';
+import AddFile from './modals/AddFile'
 
 export default function UploadTabCard() {
+  const [modalOpened, setModalOpened] = useState(false);
     return(
         <div className='account-card'>
-        <h5>Yüklediğiniz Belgeler</h5>
-        <div className='upload'>
-        <table class="table">
+         <h5>Yüklediğiniz Belgeler</h5>
+          <div className='upload'>
+           
+              <div style={{display:"flex", flexDirection:"row", justifyContent:"flex-end"}}>
+                <Button  style={{width:"200px"}} className="fund-button add" label="Ekle" onClick={() => setModalOpened(true)}/>
+                {modalOpened && <AddFile  setOpenModal={setModalOpened}/>}
+                <Button style={{width:"200px"}} className="fund-button cancel" label="İndir" />
+              </div>
+          <table class="table">
                 <thead>
                   <tr>
                     <th scope="col"><input type="checkbox"  className='file-check'/></th>
@@ -24,7 +32,7 @@ export default function UploadTabCard() {
                 <tbody>
                   
                 </tbody>
-              </table>
+            </table>
         </div>
         </div>
     )}

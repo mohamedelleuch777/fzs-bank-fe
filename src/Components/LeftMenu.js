@@ -25,7 +25,7 @@ const Navbar = () => {
             "childrens": [
                 {
                     "title": "Başvuru",
-                    "path": <Link to="/fund-app"/>,
+                    "path": "",
                 },
                 {
                     "title": "Yönet",

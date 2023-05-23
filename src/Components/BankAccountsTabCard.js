@@ -10,7 +10,7 @@ import AddBankAccount from './modals/AddBankAccount'
 export default function BankAccountsTabCard() {
     const [modalOpened, setModalOpened] = useState(false);
     return(
-        <div className='accounts-bank'>
+        <div className='account-form'>
             <h4>Bize Finansal Bilgilerinizi Verin</h4>
             <h6>Mali bilgileriniz, finansman uygunluğunuzu belirleyecektir. Banka hesaplarınızı ve ekstrelerinizi eklemek, mümkün olan en fazla sermayeyi almanızı sağlayacaktır.</h6>
             <h5>Banka Hesapları</h5>
