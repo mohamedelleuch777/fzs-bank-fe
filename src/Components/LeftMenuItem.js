@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaBeer } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 export default function LeftMenuItem({item}){
     const [open, setOpen] = useState(false)
 
@@ -8,10 +9,10 @@ export default function LeftMenuItem({item}){
         return (
             <div className={open ? "sidebar-item open" : "sidebar-item"} >
                 <div className="sidebar-title">
-                    <span>
+                <Link to={item.path || "#"}> <span>
                         { item.icon && item.icon }
                         {item.title}    
-                    </span> 
+                    </span> </Link>
                     <i className="bi-chevron-down toggle-btn" onClick={() => setOpen(!open)}></i>
                 </div>
                 <div className="sidebar-content sub-title">
@@ -23,10 +24,10 @@ export default function LeftMenuItem({item}){
         return (
         <div className= "sidebar-item">
             <div className="sidebar-title ">
-                <span href={item.path || "#"} className="">
-                    { item.icon && item.icon }
-                    {item.title}
-            </span>
+                <Link to={item.path || "#"}><span className="">{ item.icon && item.icon }
+                    {item.title}</span></Link>
+                    
+            
             </div>
         </div>
            

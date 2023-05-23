@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import  './Setting.css'
@@ -11,8 +11,11 @@ import EddaHkTabCard from './EddaHkTabCard';
 import UserManagmentTabCard from './UserManagmentTabCard';
 import UploadTabCard from './UploadsTabCard';
 import ChangePass from './ChangePassWord'
+import AddBusinessDetails from './AddBusinessDetail';
 
  export default function SettingsTab() {
+  const [changeTab, setChangeTab] = useState(false);
+  useEffect(()=>{console.log(changeTab)}, [changeTab]);
   return (
     <div className="Tabs">
       <h1>Ayarlar</h1>
@@ -37,12 +40,14 @@ import ChangePass from './ChangePassWord'
 
         <TabPanel>
           <div className="panel-content">
-            <AccountInfoTabCard/>
+            <AddBusinessDetails/>
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <ProfileInfoTabCard/>
+            {!changeTab?
+            <ProfileInfoTabCard Change={setChangeTab}/>: <ChangePass/>
+          }
           </div>
         </TabPanel>
         <TabPanel>

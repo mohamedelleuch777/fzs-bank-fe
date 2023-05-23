@@ -25,7 +25,7 @@ const Navbar = () => {
             "childrens": [
                 {
                     "title": "Başvuru",
-                    "path": "",
+                    "path": "/fund-app",
                 },
                 {
                     "title": "Yönet",
@@ -190,9 +190,8 @@ const Navbar = () => {
                 </ul>
                 <div className= "sidebar-item menu-bottom">
                     <div className="sidebar-title">
-                        
-                        <span href="">
-                        <Link to="/setting"><RiSettings2Line/></Link>
+                        <span href="" >
+                        <Link to="/setting" ><RiSettings2Line className='sets'/></Link>
                         </span>
                         <span href="">
                         <span className='lang'>TR</span> <span className='lang'>EN</span>

@@ -20,7 +20,7 @@ a{
 padding-inline-start: 0px !important;
 }
 .left-menu svg{
-  margin-right: 20px !important;
+  margin-right: 20px ;
   margin-bottom: -2px;
 }
 .logout{
@@ -42,9 +42,15 @@ padding-inline-start: 0px !important;
     left: 0;
     transition: .6s ease all;
 }
+.left-menu a{
+  color:white !important;
+}
 .sidebar-item{
     padding: .50em 1em;
     display: block;
+  }
+  .sets{
+    margin-right: 0px !important;
   }
 
   .sidebar-title{
