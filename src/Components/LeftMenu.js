@@ -13,10 +13,17 @@ import {BiCartDownload } from 'react-icons/bi';
 import {BsCreditCard2Front, BsFiles } from 'react-icons/bs';
 import {TbFileStack} from 'react-icons/tb';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
  
 
 
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
+    const ClickHandle= async lang =>{
+        await i18n.changeLanguage(lang) 
+    }
+    console.log(i18n.language)
     const menu = [
         {
             "title": "E-Ticaret Finansmanı",
@@ -193,8 +200,8 @@ const Navbar = () => {
                         <span href="" >
                         <Link to="/setting" ><RiSettings2Line className='sets'/></Link>
                         </span>
-                        <span href="">
-                        <span className='lang'>TR</span> <span className='lang'>EN</span>
+                        <span >
+                        <span onClick={() =>ClickHandle('tr')} className='lang'>TR</span> <span onClick={() =>ClickHandle('en')} className='lang'>EN</span>
                         </span>
                         <span  className="logout" href="">
                             <RiLogoutCircleRLine/>
