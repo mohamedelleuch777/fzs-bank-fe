@@ -15,6 +15,8 @@ import AddBusinessDetails from './AddBusinessDetail';
 
  export default function SettingsTab() {
   const [changeTab, setChangeTab] = useState(false);
+  const [changeTab1, setChangeTab1] = useState(false);
+  const [changeTab2, setChangeTab2] = useState(false);
   useEffect(()=>{console.log(changeTab)}, [changeTab]);
   return (
     <div className="Tabs">
@@ -40,7 +42,7 @@ import AddBusinessDetails from './AddBusinessDetail';
 
         <TabPanel>
           <div className="panel-content">
-            <AddBusinessDetails/>
+            <AccountInfoTabCard/>
           </div>
         </TabPanel>
         <TabPanel>
@@ -52,7 +54,8 @@ import AddBusinessDetails from './AddBusinessDetail';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            <CompanyInfoTabCard/>
+          {!changeTab1?
+            <CompanyInfoTabCard Change={setChangeTab1}/>: <AddBusinessDetails/>}
           </div>
         </TabPanel>
         <TabPanel>

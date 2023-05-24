@@ -5,7 +5,7 @@ import  './Setting.css'
 import styles from './styles.module.css'
 import Button from './button';
 
-export default function CompanyInfoTabCard() {
+export default function CompanyInfoTabCard({Change}) {
     return(
 
         <div className='company-card'>
@@ -17,7 +17,7 @@ export default function CompanyInfoTabCard() {
                 </div>
                 <div className='add-detail'>
                     <span>Lütfen işletmeniz hakkında doğru bilgiler verin.</span>
-                    <Button className="fund-button" label="İşletme Ayrıntılarını Ekleyin" />
+                    <Button onClick={() => Change(true)} className="fund-button" label="İşletme Ayrıntılarını Ekleyin" />
                 </div>
              </div>
              <div className='company-info'>
