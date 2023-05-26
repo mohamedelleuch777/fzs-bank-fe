@@ -5,40 +5,42 @@ import  './Setting.css'
 import styles from './styles.module.css'
 import Button from './button';
 import {BsThreeDots } from 'react-icons/bs';
+import { useTranslation } from 'react-i18next';
+
 
 export default function UserManagmentTabCard() {
+  const { t, i18n } = useTranslation();
     return(
         <div className='profile-card'>
-            <h5>Kullanıcı Yönetimi</h5>
              <div className='pass-change'>
                 <div>
-                    <span className='company-name'>Kullanıcı Yönetimi</span>
+                    <span className='company-name'>{t('new-user')}</span>
                 </div>
                 <form>
                     <div className='form-element'>
                         <div>
-                            <label style={{marginBottom:"10px"}}>İş Eposta Adresi</label>
-                            <input className='form-control' type="email" name="email" />
+                            <label style={{marginBottom:"10px"}}>{t('mail-u')}</label>
+                            <input className='form-control' type="email" name="email"  placeholder={t('add-user-info')}/>
                         </div>
                         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
-                            <Button  style={{width:"49%"}} className="fund-button" label="Davet Gönder" />
-                            <Button style={{width:"49%"}} className="fund-button cancel" label="Vazgeç" />
+                            <Button  style={{width:"49%"}} className="fund-button" label={t('add-user-btn')} />
+                            <Button style={{width:"49%"}} className="fund-button cancel" label={t('cancel')} />
                         </div>
                        
                    
                     </div>
                 </form>
              </div>
-             <h5>Kullanıcı Kayıtları</h5>
+             <h5>{t('regis')}</h5>
              <div className='pass-change'>
              <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">Email</th>
-                    <th scope="col">Telefon</th>
-                    <th scope="col">Adı</th>
-                    <th scope="col">Soyadı</th>
-                    <th scope="col">Rolü</th>
+                    <th scope="col">{t('eposta')}</th>
+                    <th scope="col">{t('tel')}</th>
+                    <th scope="col">{t('first-name')}</th>
+                    <th scope="col">{t('lastName')}</th>
+                    <th scope="col">{t('own-type')}</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>

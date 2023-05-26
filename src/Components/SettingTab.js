@@ -12,31 +12,33 @@ import UserManagmentTabCard from './UserManagmentTabCard';
 import UploadTabCard from './UploadsTabCard';
 import ChangePass from './ChangePassWord'
 import AddBusinessDetails from './AddBusinessDetail';
+import { useTranslation } from 'react-i18next';
 
  export default function SettingsTab() {
+  const { t, i18n } = useTranslation();
   const [changeTab, setChangeTab] = useState(false);
   const [changeTab1, setChangeTab1] = useState(false);
   const [changeTab2, setChangeTab2] = useState(false);
   useEffect(()=>{console.log(changeTab)}, [changeTab]);
   return (
     <div className="Tabs">
-      <h1>Ayarlar</h1>
+      <h1>{t('setting')}</h1>
       <Tabs>
         <TabList>
           <Tab>
-            <p>Hesap Bilgileri</p>
+            <p>{t('acnt')}</p>
           </Tab>
           <Tab>
-            <p>Profil Bilgileri</p>
+            <p>{t('security')}</p>
           </Tab>
           <Tab>
-            <p>Şirket Bilgileri</p>
+            <p>{t('company')}</p>
           </Tab>
           <Tab>
-            <p>Kullanıcı Yönetimi</p>
+            <p>{t('user-man')}</p>
           </Tab>
           <Tab>
-            <p>Yüklemeler</p>
+            <p>{t('uploads')}</p>
           </Tab>
         </TabList>
 

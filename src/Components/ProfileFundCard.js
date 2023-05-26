@@ -4,50 +4,50 @@ import styles from './styles.module.css'
 import './Profile.css'
 import{FaCertificate}from 'react-icons/fa';
 import Button from './button';
-
+import { useTranslation } from 'react-i18next';
 export default function ProfileFundCard(){
+    const { t, i18n } = useTranslation();
     return(
         <div className='profile-info'>
-            <div className='company-name'>Fon Başvuru Özeti</div>
+            <div className='company-name'>{t('fund-summary')}</div>
             <div className='fund-info'>
                 <div className='info'>
                      <span>
-                         <p className='title'>Bekleyen Yatırım İncelemesi</p>
-                         <p>Başvurunuz inceleniyor. Bir ön koşul sayfası almak için lütfen gelir doğrulamaları için daha fazla ticari ve finansal bilgi sağlamaya devam edin.</p>
+                         <p className='title'>{t('wait-fund')}</p>
+                         <p>{t('profile-fund-info')}</p>
                      </span> 
                 
                 </div>
                  <div>
-                 <Button className="fund-button" label="Devam Et" />
+                 <Button className="fund-button" label={t('btn-con')} />
                  </div>
              </div>
              <div className='investment'>
                     <div className='teklif'>
                         <div className='info'>
                             <span className='company-name'>
-                                 Teklif Detaylarım
+                                 {t("offer-title")}
                              </span> 
                             <div style={{display:"flex",justifyContent:"space-between", width:"500px"}}>
                                 <span className='element'>
-                                     <p>Fon Tutarı</p>
-                                     <p>USD 0</p>
+                                     <p>{t('sonuc')}</p>
+                                     <p>TL</p>
                                  </span> 
                                  <span className='element'>
-                                     <p>Toplam Havale Tutarı</p>
+                                     <p>{t('success-fund')}</p>
                                  </span> 
                                  <span className='element'>
-                                     <p>Havale Oranı</p>
+                                     <p>{t('oran')}</p>
                                  </span>
                             </div>
                         </div>
                          <div style={{borderLeft:"solid 1px rgb(218 218 218)",paddingLeft:"20px", marginLeft:"100px"}}>
                              <span className='company-name'>
-                             Talep Ettiğim Miktar
+                                <p>{t('request-f')}</p>
                             </span> 
                              <div className='teklif'>
                                  <span className='element'>
-                                     <p>Talep Edilen Fon Tutarı</p>
-                                     <p>USD 15,000.00</p>
+                                     <p> TL 15,000.00</p>
                             </span> 
                         </div>
                  

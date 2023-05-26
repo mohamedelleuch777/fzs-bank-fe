@@ -26,7 +26,7 @@ const Navbar = () => {
     console.log(i18n.language)
     const menu = [
         {
-            "title": "E-Ticaret Finansmanı",
+            "title": t('left-fund'),
             "path": "/fund-app",
             "icon": <RiHandCoinLine/>,
             "childrens": [
@@ -42,7 +42,7 @@ const Navbar = () => {
             ]
         },
         {
-            "title": "Banka Hesabı",
+            "title": t('left-bank'),
             "icon": <MdOutlineFolderOpen />,
             "childrens": [
                 {
@@ -57,12 +57,12 @@ const Navbar = () => {
         },
        
         {
-            "title": "Sanal Kart",
+            "title": t('sanal-kart'),
             "icon": <BsCreditCard2Front/>,
           
         },
         {
-            "title": "FX",
+            "title": t('fx'),
             "icon": <RiExchangeBoxLine/>,
             "childrens": [
                 {
@@ -80,65 +80,65 @@ const Navbar = () => {
             ]
         },
         {
-            "title": "EFT",
+            "title": t('eft'),
             "icon": <RiSendPlaneLine/>,
             "childrens": [
                 {
-                    "title": "EFT&FAST",
+                    "title":t('fast'),
                     "path": "/"
                 },
                 {
-                    "title": "UPT",
+                    "title": t('upt'),
                     "path": "/"   
                 }, 
                 {
-                    "title": "Kolay Adres",
+                    "title": t('kolay'),
                     "path": "/"   
                 }
                 
             ]
         }, {
-            "title": "Fatura",
+            "title": t('fatura'),
             "icon": <TbFileStack/>,
             "childrens": [
                 {
-                    "title": "Doğalgaz",
+                    "title": t('dogalgaz'),
                     "path": "/"
                 },
                 {
-                    "title": "Elektrik",
+                    "title": t('elektrik'),
                     "path": "/"   
                 },
                 {
-                    "title": "Su",
+                    "title": t('su'),
                     "path": "/"   
                 },
                 {
-                    "title": "Telefon",
+                    "title": t('tel'),
                     "path": "/"   
                 },
                 {
-                    "title": "İnternet",
+                    "title": t('net'),
                     "path": "/"   
                 },
                 {
-                    "title": "TV",
+                    "title": t('tv'),
                     "path": "/"   
                 }
             ]
         },
         {
-            "title": "Karekod",
+            "title": t('karekod'),
             "icon": <MdOutlineQrCode/>,
            
         },
         {
-            "title": "Sanal Pos",
+            "title": t('sanal-pos'),
              "icon": <BiCartDownload/>,
             
         },
         {
-            "title": "Tüm Hesaplarım",
+            "title":t('tum-hesap'),
             "icon": <BsFiles/>,
             
         },
