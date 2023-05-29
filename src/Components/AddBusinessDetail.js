@@ -129,7 +129,6 @@ export default function AddBusinessDetails() {
                         </div>
                         <div>
                             <label>{t('add-file')}</label>
-                            <input className='form-control' type="text" name="mail" />
                         </div>
                         <p>{t('gerekli')}</p>
                         <p>1. {t('add-file-type1')}</p>

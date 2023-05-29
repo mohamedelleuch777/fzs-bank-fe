@@ -25,7 +25,7 @@ import { useTranslation } from 'react-i18next';
            <li class="step0"></li>
            <li class="step0"></li>
            <li class="step0"></li>
-           <li class="step0"></li>
+           
          
          </ul>
         <Tab>

@@ -70,7 +70,7 @@
     "type6":"SaaS Satışları",
     "phone-number":"Cep Telefonu No",
     "add-file":"Belge Yükle",
-    "gerekli":"Required Documents:",
+    "gerekli":"Yüklenmesi Gereken Belgeler:",
     "add-file-type1":"Oda kayıt belgesi veya kurum sicil belgesi",
     "add-file-type2":"Vergi levhası",
     "surukle":"Dosyalarınızı buraya sürükleyip bırakın veya seçmek için tıklayın",
@@ -172,7 +172,7 @@
     "net":"İnternet",
     "karekod":"Karekod",
     "sanal-pos":"Sanal Pos",
-    "tum-hesap":"Tüm Hesaplarım",
+    "tum-hesap":"Tüm Banka Hesaplarım",
     "login":"Giriş Yap",
     "logout":"Çıkış Yap"
 

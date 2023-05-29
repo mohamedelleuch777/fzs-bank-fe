@@ -31,11 +31,11 @@ const Navbar = () => {
             "icon": <RiHandCoinLine/>,
             "childrens": [
                 {
-                    "title": "Başvuru",
+                    "title": t('app'),
                     "path": "/fund-app",
                 },
                 {
-                    "title": "Yönet",
+                    "title": t('yonet'),
                     "path": "/"
                 }
                
@@ -46,21 +46,17 @@ const Navbar = () => {
             "icon": <MdOutlineFolderOpen />,
             "childrens": [
                 {
-                    "title": "Hesap Aç",
+                    "title": t('open-bank'),
                     "path": "/"
                 },
                 {
-                    "title": "Yönet",
+                    "title": t('yonet'),
                     "path": "/"
                 }
             ]
         },
        
-        {
-            "title": t('sanal-kart'),
-            "icon": <BsCreditCard2Front/>,
-          
-        },
+        
         {
             "title": t('fx'),
             "icon": <RiExchangeBoxLine/>,
@@ -133,10 +129,16 @@ const Navbar = () => {
            
         },
         {
+            "title": t('sanal-kart'),
+            "icon": <BsCreditCard2Front/>,
+          
+        },
+        {
             "title": t('sanal-pos'),
              "icon": <BiCartDownload/>,
             
         },
+       
         {
             "title":t('tum-hesap'),
             "icon": <BsFiles/>,
