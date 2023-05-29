@@ -5,7 +5,7 @@ import  './Setting.css'
 import styles from './styles.module.css'
 import Button from './button';
 import AddBankAccount from './modals/AddBankAccount'
-
+import ManuelAddBankAccount from './modals/ManuelAddBankAccount';
 
 export default function BankAccountsTabCard() {
     const [modalOpened, setModalOpened] = useState(false);

@@ -27,7 +27,7 @@ export default function CompanyInfoTabCard({Change}) {
                 </div>
                 <div className='add-detail'>
                     <span>{t('own-info')}</span>
-                    <Button className="fund-button" label={t('add-onw-btn')} />
+                    <Button onClick={() => Change(true)} className="fund-button"  label={t('add-onw-btn')} />
                 </div>
              </div>
              

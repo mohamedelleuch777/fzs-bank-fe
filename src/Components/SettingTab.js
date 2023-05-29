@@ -20,7 +20,7 @@ import AddOwn from './AddOwn';
   const [changeTab, setChangeTab] = useState(false);
   const [changeTab1, setChangeTab1] = useState(false);
   const [changeTab2, setChangeTab2] = useState(false);
-  useEffect(()=>{console.log(changeTab1)}, [changeTab1]);
+  useEffect(()=>{console.log(changeTab2)}, [changeTab2]);
   return (
     <div className="Tabs">
       <h1>{t('setting')}</h1>
@@ -59,6 +59,8 @@ import AddOwn from './AddOwn';
           <div className="panel-content">
           {!changeTab1?
             <CompanyInfoTabCard Change={setChangeTab1}/>: <AddOwn/>}
+            {!changeTab2?
+            <CompanyInfoTabCard Change={setChangeTab2}/>: <AddBusinessDetails/>}
           
           </div>
         </TabPanel>

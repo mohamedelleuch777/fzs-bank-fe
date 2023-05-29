@@ -60,7 +60,7 @@ export default function PreliminaryFundingAmountTab() {
                 </div>
 
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss3')}</label>
+                  <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-3">{t('sss3')}</label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
@@ -71,7 +71,7 @@ export default function PreliminaryFundingAmountTab() {
                 </div>
 
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss4')}</label>
+                  <input class="faq-drawer__trigger" id="faq-drawer-4" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-4">{t('sss4')}</label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
@@ -82,7 +82,7 @@ export default function PreliminaryFundingAmountTab() {
                 </div>
 
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss5')}</label>
+                  <input class="faq-drawer__trigger" id="faq-drawer-5" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-5">{t('sss5')}</label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
@@ -92,7 +92,7 @@ export default function PreliminaryFundingAmountTab() {
                   </div>
                 </div>
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss6')}</label>
+                  <input class="faq-drawer__trigger" id="faq-drawer-6" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-6">{t('sss6')}</label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
@@ -103,7 +103,7 @@ export default function PreliminaryFundingAmountTab() {
                 </div>
 
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-3">{t('sss7')}</label>
+                  <input class="faq-drawer__trigger" id="faq-drawer-7" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-7">{t('sss7')}</label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
