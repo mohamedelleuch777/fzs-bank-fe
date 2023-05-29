@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function CompanyInfoTabCard({Change}) {
     const { t, i18n } = useTranslation();
+    
     return(
 
         <div className='company-card'>

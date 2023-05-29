@@ -82,6 +82,7 @@
     "own-type":"Yetki Türü",
     "job":"Mesleğiniz" ,
     "address":"Ev Adresiniz",
+    "birthday":"Doğum Tarihi",
     "dogrulama":"Kimlik Doğrulama",
     "new-user":"Yeni Kullanıcı Davet Et",
     "mail-u":"E-mail Adresi",

@@ -13,13 +13,14 @@ import UploadTabCard from './UploadsTabCard';
 import ChangePass from './ChangePassWord'
 import AddBusinessDetails from './AddBusinessDetail';
 import { useTranslation } from 'react-i18next';
+import AddOwn from './AddOwn';
 
  export default function SettingsTab() {
   const { t, i18n } = useTranslation();
   const [changeTab, setChangeTab] = useState(false);
   const [changeTab1, setChangeTab1] = useState(false);
   const [changeTab2, setChangeTab2] = useState(false);
-  useEffect(()=>{console.log(changeTab)}, [changeTab]);
+  useEffect(()=>{console.log(changeTab1)}, [changeTab1]);
   return (
     <div className="Tabs">
       <h1>{t('setting')}</h1>
@@ -57,7 +58,8 @@ import { useTranslation } from 'react-i18next';
         <TabPanel>
           <div className="panel-content">
           {!changeTab1?
-            <CompanyInfoTabCard Change={setChangeTab1}/>: <AddBusinessDetails/>}
+            <CompanyInfoTabCard Change={setChangeTab1}/>: <AddOwn/>}
+          
           </div>
         </TabPanel>
         <TabPanel>
