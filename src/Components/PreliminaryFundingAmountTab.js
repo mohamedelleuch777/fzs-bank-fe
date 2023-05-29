@@ -4,18 +4,20 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import  './FundApplication.css'
 import styles from './styles.module.css'
 import Button from './button';
+import { useTranslation } from 'react-i18next';
 
 export default function PreliminaryFundingAmountTab() {
+  const { t, i18n } = useTranslation();
     return (
         <div className='account-card'>
-            <h3>Ön Finansman Tutarı</h3>
-            <h2>USD 15,000</h2>
-            <p>Bu, satışlarınıza dayalı tahmini bir finansman tutarıdır. Nihai teklif şartları, ihtiyaçlarınıza ve iş uygunluğunuz ile finansal verilerinizin daha ayrıntılı bir incelemesine bağlıdır. Başvurunuzu başlatmak için sonraki adımları izleyin.</p>
+            <h3>{t('title2')}</h3>
+            <h2> 15,000 TL</h2>
+            <p>{t('fund-info2')}</p>
             <div className='account-form'>
                 <form>
                     <div className='amount'>
                         <div>
-                        <label>İstediğiniz fonlama tutarını girin *</label>
+                        <label>{t('title3')}</label>
                         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
                             <div style={{width:"29%"}}>
                                 <select className='form-control form-select' type="text" name="earning-type">
@@ -29,42 +31,83 @@ export default function PreliminaryFundingAmountTab() {
                             </div>
                         </div>
                         </div>
-                        <Button className="fund-button" label="Devam" />
+                        <Button className="fund-button" label={t('btn-con')}/>
                         
                     </div>
                 </form>
             </div>
             <div className='accardion'>
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer">Finanse edilmesi ne kadar sürer? </label>
+                  <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer">{t('sss1')} </label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
-                      48 saat gibi kısa bir sürede, durumunuza bağlı olarak, başvurunuz gönderildikten sonra finansman tekliflerini gösteren bir ön protokol alacaksınız. Vadeli anlaşma üzerine 24 saat içinde para alın.
+                        {t('c1')}
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">Daha fazla fon alabilir miyim?</label>
+                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss2')}</label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
-                      Daha fazla fon alabilir miyim? Choco Up'ta, kendi başarımız kadar her kurucunun başarısını da kutlarız. Finansman teklifleri, veriye dayalı yaklaşımımızla analiz edilen finansal ve pazarlama performansınıza dayalıdır. Ne kadar çok gelir elde ederseniz ve ne kadar çok satış verisi bağlarsanız, size o kadar çok fon sağlanacaktır.
-
-                      İşletmeniz büyüdükçe, ölçeklendirmek için daha fazla sermayeye ihtiyacınız olabileceğini anlıyoruz. İhtiyaçlarınıza en uygun şekilde güncellenmiş finansman teklifleriyle yeni bir finansman turu sunulacaktır.
+                        {t('c2')}
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div class="faq-drawer">
-                  <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-3">Herhangi bir ücret var mı?</label>
+                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss3')}</label>
                   <div class="faq-drawer__content-wrapper">
                     <div class="faq-drawer__content">
                       <p>
-                      Sizin gibi kurucular için işleri basit ve şeffaf hale getirmeyi seviyoruz. Dönemsel veya bileşik faizimiz yoktur. Gelir paylaşımı modelimiz, sabit bir ücret anlamına gelir ve geri ödeme sırasında satışlarınızın sabit bir yüzdesi alınır. Teklifi kabul etmeden önce tam olarak ne kadar ödediğinizi bilirsiniz ve süreç boyunca ücretler artmaz.
+                        {t('c3')}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-drawer">
+                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss4')}</label>
+                  <div class="faq-drawer__content-wrapper">
+                    <div class="faq-drawer__content">
+                      <p>
+                        {t('c4')}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-drawer">
+                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss5')}</label>
+                  <div class="faq-drawer__content-wrapper">
+                    <div class="faq-drawer__content">
+                      <p>
+                        {t('c5')}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-drawer">
+                  <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">{t('sss6')}</label>
+                  <div class="faq-drawer__content-wrapper">
+                    <div class="faq-drawer__content">
+                      <p>
+                        {t('c6')}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq-drawer">
+                  <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-3">{t('sss7')}</label>
+                  <div class="faq-drawer__content-wrapper">
+                    <div class="faq-drawer__content">
+                      <p>
+                      {t('c7')}
                       </p>
                     </div>
                   </div>

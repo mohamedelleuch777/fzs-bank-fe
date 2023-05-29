@@ -6,11 +6,14 @@ import styles from './styles.module.css'
 import FunApplicationBusinessTab from './FundApplicationBussinesInfoTab';
 import PreliminaryFundingAmountTab from './PreliminaryFundingAmountTab';
 import AppForFunding from './AppForFund';
+import { useTranslation } from 'react-i18next';
 
  export default function FunApplicationTabs() {
+  const { t, i18n } = useTranslation();
   return (
+    
     <div className="Tabs">
-    <h1>Fon Başvurusu</h1>
+    <h1>{t('fund-tab')}</h1>
     
     <Tabs>
    
@@ -26,23 +29,21 @@ import AppForFunding from './AppForFund';
          
          </ul>
         <Tab>
-          <p>İşletme Bilgileri</p>
+          <p>{t('tab1')}</p>
         </Tab>
         <Tab>
-          <p>Ön Finansman Tutarı</p>
+          <p>{t('tab2')}</p>
         </Tab>
         <Tab>
-          <p>Finansman İçin Başvur</p>
+          <p>{t('tab3')}</p>
         </Tab>
         <Tab>
-          <p>Başvuru Özeti</p>
+          <p>{t('teklif-ozet')}</p>
         </Tab>
         <Tab>
-          <p>Gelir Doğrulama</p>
+          <p>{t('teklif')}</p>
         </Tab>
-        <Tab>
-          <p>Finansman Kabul Et</p>
-        </Tab>
+   
         </div>
       </TabList>
       <TabPanel>
