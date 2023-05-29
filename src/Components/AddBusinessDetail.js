@@ -128,14 +128,14 @@ export default function AddBusinessDetails() {
                             <input className='form-control' type="text" name="mail" />
                         </div>
                         <div>
-                            <label>{t('add-file')}</label>
+                            <label style={{fontSize:"20px"}}>{t('add-file')}</label>
                         </div>
-                        <p>{t('gerekli')}</p>
-                        <p>1. {t('add-file-type1')}</p>
-                        <p>2. {t('add-file-type2')}</p>
+                        <p style={{fontSize:"18px"}}>{t('gerekli')}</p>
+                        <p style={{fontSize:"16px"}}>1. {t('add-file-type1')}</p>
+                        <p style={{fontSize:"16px"}}>2. {t('add-file-type2')}</p>
                         <div tabIndex={0} role="presentation">
                             <input className='form-control' multiple type="file" name="add-file" tabIndex={1} style={{display:"none"}} />
-                            <div className='add-file'>
+                            <div className='add-file' style={{fontSize:"14px"}}>
                                 {t('surukle')}
                             </div>
                     </div>

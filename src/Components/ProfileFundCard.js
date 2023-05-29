@@ -19,7 +19,7 @@ export default function ProfileFundCard(){
                 
                 </div>
                  <div>
-                 <Button className="fund-button" label={t('btn-con')} />
+                 <Button className="fund-button" label={t('btn-con')}  />
                  </div>
              </div>
              <div className='investment'>
@@ -28,7 +28,7 @@ export default function ProfileFundCard(){
                             <span className='company-name'>
                                  {t("offer-title")}
                              </span> 
-                            <div style={{display:"flex",justifyContent:"space-between", width:"500px"}}>
+                            <div style={{display:"flex",justifyContent:"space-between", width:"600px"}}>
                                 <span className='element'>
                                      <p>{t('sonuc')}</p>
                                      <p>TL</p>
@@ -41,13 +41,13 @@ export default function ProfileFundCard(){
                                  </span>
                             </div>
                         </div>
-                         <div style={{borderLeft:"solid 1px rgb(218 218 218)",paddingLeft:"20px", marginLeft:"100px"}}>
+                         <div style={{borderLeft:"solid 1px rgb(218 218 218)",paddingLeft:"20px", marginLeft:"100px", marginTop:"20px"}}>
                              <span className='company-name'>
                                 <p>{t('request-f')}</p>
                             </span> 
                              <div className='teklif'>
                                  <span className='element'>
-                                     <p> TL 15,000.00</p>
+                                     <p style={{fontSize:"40px"}}> TL 15,000.00</p>
                             </span> 
                         </div>
                  

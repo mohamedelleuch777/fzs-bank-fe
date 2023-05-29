@@ -58,7 +58,7 @@ import AddOwn from './AddOwn';
         <TabPanel>
           <div className="panel-content">
           {!changeTab1?
-            <CompanyInfoTabCard Change={setChangeTab1}/>: <AddOwn/>}
+            <CompanyInfoTabCard Change={setChangeTab1}/>: <AddBusinessDetails/>}
           </div>
         </TabPanel>
         <TabPanel>

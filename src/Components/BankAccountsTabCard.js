@@ -11,9 +11,8 @@ export default function BankAccountsTabCard() {
     const [modalOpened, setModalOpened] = useState(false);
     return(
         <div className='account-form'>
-            <h4>Bize Finansal Bilgilerinizi Verin</h4>
-            <h6>Mali bilgileriniz, finansman uygunluğunuzu belirleyecektir. Banka hesaplarınızı ve ekstrelerinizi eklemek, mümkün olan en fazla sermayeyi almanızı sağlayacaktır.</h6>
-            <h5>Banka Hesapları</h5>
+            <h5 className='company-name'>Hesap Hareketleri</h5>
+            <h6>Elde ettiğiniz gelirleri doğrulamak amacıyla banka hesaplarınıza gerçekleşen para girişlerini gösteren ekstreleri yükleyiniz. En az son 6 ay elde edilen satış gelirlerini doğrulamanız gerekmektedir.</h6>
             <div className='bank'></div>
 
             <Button className="fund-button" onClick={() => setModalOpened(true)} label="Banka Hesabı Ekle" />

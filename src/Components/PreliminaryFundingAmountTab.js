@@ -20,11 +20,7 @@ export default function PreliminaryFundingAmountTab() {
                         <label>{t('title3')}</label>
                         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
                             <div style={{width:"29%"}}>
-                                <select className='form-control form-select' type="text" name="earning-type">
-                                    <option>USD</option>
-                                    <option>EUR</option>
-                                    <option>TL</option>
-                                </select>
+                              <input className='form-control' type="text" name="earning-type " value={"TL"}/>
                             </div>
                             <div style={{width:"69%"}}>
                                 <input className='form-control' type="text" name="amount" />

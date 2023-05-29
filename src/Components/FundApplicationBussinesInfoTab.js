@@ -31,6 +31,10 @@ export default function FunApplicationBusinessTab() {
                             <input className='form-control' type="text" name="tck" />
                         </div>
                         <div>
+                            <label>{t('ticaret')}</label>
+                            <input className='form-control' type="text" name="company-name" />
+                        </div>
+                        <div>
                             <label> {t('vkn')}</label>
                             <input className='form-control' type="text" name="vkn" />
                         </div>
@@ -53,11 +57,8 @@ export default function FunApplicationBusinessTab() {
                         <label>{t('aylik-gelir')}</label>
                         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between", margin:0}}>
                             <div style={{width:"29%",margin:0}}>
-                                <select className='form-control form-select' type="text" name="earning-type">
-                                    <option>USD</option>
-                                    <option>EUR</option>
-                                    <option>TL</option>
-                                </select>
+                                <input className='form-control' type="text" name="earning-type " value={"TL"}/>
+                                  
                             </div>
                             <div style={{width:"69%", margin:0}}>
                                 <input className='form-control' type="text" name="amount" />

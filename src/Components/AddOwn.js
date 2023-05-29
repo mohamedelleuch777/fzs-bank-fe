@@ -65,7 +65,7 @@ export default function AddOwn() {
                         </div>
                         <div>
                             <label>{t('dogrulama')}</label>
-                            <input className='form-control' type="text" name="tck"/>
+                            <input className='form-control' type="text" name="tck" placeholder={t('tc')}/>
                         </div>
                         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
                             <Button  style={{width:"230px"}} className="fund-button " label={t('save-btn')}/>

@@ -22,11 +22,9 @@ export default function UserManagmentTabCard() {
                             <label style={{marginBottom:"10px"}}>{t('mail-u')}</label>
                             <input className='form-control' type="email" name="email"  placeholder={t('add-user-info')}/>
                         </div>
-                        <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
-                            <Button  style={{width:"49%"}} className="fund-button" label={t('add-user-btn')} />
-                            <Button style={{width:"49%"}} className="fund-button cancel" label={t('cancel')} />
-                        </div>
-                       
+                        
+                            <Button className="fund-button" label={t('add-user-btn')} />
+
                    
                     </div>
                 </form>
@@ -41,7 +39,7 @@ export default function UserManagmentTabCard() {
                     <th scope="col">{t('first-name')}</th>
                     <th scope="col">{t('lastName')}</th>
                     <th scope="col">{t('own-type')}</th>
-                    <th scope="col"></th>
+                    
                   </tr>
                 </thead>
                 <tbody>
@@ -51,7 +49,6 @@ export default function UserManagmentTabCard() {
                     <td>Mehmet</td>
                     <td>Bey</td>
                     <td>Müşteri</td>
-                    <td><BsThreeDots/></td>
                   </tr>
                   
                 </tbody>
