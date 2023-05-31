@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 import Button from './button';
 import { useTranslation } from 'react-i18next';
 
-export default function AddBusinessDetails() {
+export default function AddBusinessDetails({Change}) {
     const { t, i18n } = useTranslation();
     return(
         <div className='account-card'>
@@ -138,11 +138,11 @@ export default function AddBusinessDetails() {
                             <div className='add-file' style={{fontSize:"14px"}}>
                                 {t('surukle')}
                             </div>
-                    </div>
+                        </div>
                     
                     <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
                         <Button  style={{width:"230px"}} className="fund-button " label={t('save-btn')}/>
-                        <Button style={{width:"230px"}} className="fund-button cancel" label={t('cancel')} />
+                        <Button  onClick={(e) => Change("0")} style={{width:"230px"}} className="fund-button cancel" label={t('cancel')} />
                     </div>
                 </div>
                    

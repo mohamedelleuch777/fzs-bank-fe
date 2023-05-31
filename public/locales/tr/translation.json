@@ -174,7 +174,22 @@
     "sanal-pos":"Sanal Pos",
     "tum-hesap":"Tüm Banka Hesaplarım",
     "login":"Giriş Yap",
-    "logout":"Çıkış Yap"
+    "logout":"Çıkış Yap",
+    "ekstre-title":"E-ticaretten Para Girişlerini Gösteren Banka Ekstresi Yükle",
+    "ekstre-info":"Lütfen işletmeniz tarafından e-ticaret için kullanılan tüm banka hesaplarına para girişlerini gösteren ekstreleri yükleyiniz. Her seferinde bir banka hesabı ekstresi yükleyiniz. Her banka hesabı için bu işlemi tekrarlayınız.",
+    "iban":"İBAN",
+    "para-birimi":"Para Birimi",
+    "bank-name":"Banka Adı",
+    "orn":"örn. E-ticaret Hesabı",
+    "not":"*En az son 6 ayın para girişlerini yansıtan ekstreler yükleyiniz",
+    "not2":"** Yüklenen dosya .xls .xlsx veya .pdf formatında ve azami boyutu 10MB olması gerekmektedir.",
+    "tl":"TL",
+    "usd":"USD",
+    "eur":"EUR",
+    "gbp":"GBP"
+    
+    
+
 
 
     

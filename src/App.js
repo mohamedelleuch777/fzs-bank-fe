@@ -11,7 +11,7 @@ import ClientManagement from "./Pages/Client_mgt";
 import Profile from "./Pages/Profile";
 import Setting from "./Pages/Setting";
 import FundApplication from "./Pages/FunApplication";
-import ChangePass from "./Components/ChangePassWord";
+import AllBanksAccounts from "./Pages/AllBanksAccounts";
 
 
 export default function App() {
@@ -58,8 +58,8 @@ export default function App() {
             <Route path="/" exact element={user ? <Dashboard /> : <Navigate to="/login" />} />
             <Route path="/client" exact element={user ? <ClientManagement /> : <Navigate to="/login" />} />
             <Route path="/profile" exact element={user ? <Profile /> : <Navigate to="/login" />} />
-            <Route path="/change-pass" exact element={user ? <ChangePass /> : <Navigate to="/login" />} />
             <Route path="/setting" exact element={user ? <Setting /> : <Navigate to="/login" />} />
+            <Route path="/all-accounts" exact element={user ? <AllBanksAccounts /> : <Navigate to="/login" />} />
             <Route path="/fund-app" exact element={user ? <FundApplication /> : <Navigate to="/login" />} />
             <Route path="/login" exact element={!user ? <Login /> : <Navigate to="/" />} />
             <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />

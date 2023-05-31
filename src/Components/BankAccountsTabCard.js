@@ -6,11 +6,15 @@ import styles from './styles.module.css'
 import Button from './button';
 import AddBankAccount from './modals/AddBankAccount'
 import ManuelAddBankAccount from './modals/ManuelAddBankAccount';
+import { useTranslation } from 'react-i18next';
 
 export default function BankAccountsTabCard() {
+    const { t, i18n } = useTranslation();
     const [modalOpened, setModalOpened] = useState(false);
     return(
-        <div className='account-form'>
+        <>
+        <h1>{t('tum-hesap')}</h1>
+        <div className='tum-hesap'>
             <h5 className='company-name'>Hesap Hareketleri</h5>
             <h6>Elde ettiğiniz gelirleri doğrulamak amacıyla banka hesaplarınıza gerçekleşen para girişlerini gösteren ekstreleri yükleyiniz. En az son 6 ay elde edilen satış gelirlerini doğrulamanız gerekmektedir.</h6>
             <div className='bank'></div>
@@ -19,4 +23,5 @@ export default function BankAccountsTabCard() {
             
             {modalOpened && <AddBankAccount  setOpenModal={setModalOpened}/>}
         </div>
+        </>
     )}

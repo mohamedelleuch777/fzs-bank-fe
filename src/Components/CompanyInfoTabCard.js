@@ -18,7 +18,7 @@ export default function CompanyInfoTabCard({Change}) {
                 </div>
                 <div className='add-detail'>
                     <span>{t('add-company-info')}</span>
-                    <Button onClick={() => Change(true)} className="fund-button" label={t('add-company-btn')} />
+                    <Button onClick={(e) => Change("1")} className="fund-button" label={t('add-company-btn')} />
                 </div>
              </div>
              <div className='company-info'>
@@ -27,7 +27,7 @@ export default function CompanyInfoTabCard({Change}) {
                 </div>
                 <div className='add-detail'>
                     <span>{t('own-info')}</span>
-                    <Button onClick={() => Change(true)} className="fund-button"  label={t('add-onw-btn')} />
+                    <Button onClick={(e) => Change("2")} className="fund-button"  label={t('add-onw-btn')} />
                 </div>
              </div>
              

@@ -173,9 +173,19 @@
     "karekod":"QR Code",
     "tum-hesap":"All Bank Accounts",
     "login":"Log in",
-    "logout":"Log out"
+    "logout":"Log out",
+    "ekstre-title":"Upload Bank Statement Showing Money Inflows from E-commerce",
+    "ekstre-info":"Please upload statements showing money inflows to all bank accounts used by your business for e-commerce. Upload one bank statement at a time. Repeat this process for each bank account.",
+    "iban":"IBAN",
+    "para-birimi":"Currency",
+    "bank-name":"Bank Name",
+    "orn":"e.g. E-commerce Account",
+    "not":" *Upload statements showing money inflows for the last 6 months at least.",
+    "not2":"** The uploaded file must be in xls .xlsx or .pdf format and its maximum size allowed is 10MB",
+    "tl":"TL",
+    "usd":"USD",
+    "eur":"EUR",
+    "gbp":"GBP"
 
-
-    
 
 }

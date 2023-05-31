@@ -141,6 +141,7 @@ const Navbar = () => {
        
         {
             "title":t('tum-hesap'),
+            "path": "/all-accounts" ,
             "icon": <BsFiles/>,
             
         },

@@ -16,7 +16,7 @@ export default function ProfileInfoTabCard({Change}) {
                 </div>
                 <div className='change'>
                     <span>{t('pass-info')}</span>
-                   <Button onClick={() => Change(true)} className="fund-button" label={t('pass-btn')} />
+                   <Button onClick={() => Change("3")} className="fund-button" label={t('pass-btn')} />
                   
                 </div>
              </div>

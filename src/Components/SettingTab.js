@@ -17,10 +17,9 @@ import AddOwn from './AddOwn';
 
  export default function SettingsTab() {
   const { t, i18n } = useTranslation();
-  const [changeTab, setChangeTab] = useState(false);
-  const [changeTab1, setChangeTab1] = useState(false);
-  const [changeTab2, setChangeTab2] = useState(false);
-  useEffect(()=>{console.log(changeTab2)}, [changeTab2]);
+  const [changeTab, setChangeTab] = useState("0");
+  const changeHandler = (switchText)=>{ setChangeTab(switchText) }
+  useEffect(()=>{console.log(changeTab)}, [changeTab]);
   return (
     <div className="Tabs">
       <h1>{t('setting')}</h1>
@@ -50,15 +49,19 @@ import AddOwn from './AddOwn';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            {!changeTab?
-            <ProfileInfoTabCard Change={setChangeTab}/>: <ChangePass/>
-          }
+            {changeTab=="3"?
+            <ChangePass Change={changeHandler}/>:<ProfileInfoTabCard/>}
+          
           </div>
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-          {!changeTab1?
-            <CompanyInfoTabCard Change={setChangeTab1}/>: <AddBusinessDetails/>}
+          {changeTab=="0" &&
+            <CompanyInfoTabCard Change={changeHandler}/>}
+          {changeTab=="1"&&
+            <AddBusinessDetails Change={changeHandler}/>}
+            {changeTab=="2"&&
+            <AddOwn Change={changeHandler}/>}
           </div>
         </TabPanel>
         <TabPanel>
