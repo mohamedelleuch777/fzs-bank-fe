@@ -15,8 +15,7 @@ export default function BankAccountsTabCard() {
         <>
         <h1>{t('tum-hesap')}</h1>
         <div className='tum-hesap'>
-            <h5 className='company-name'>Hesap Hareketleri</h5>
-            <h6>Elde ettiğiniz gelirleri doğrulamak amacıyla banka hesaplarınıza gerçekleşen para girişlerini gösteren ekstreleri yükleyiniz. En az son 6 ay elde edilen satış gelirlerini doğrulamanız gerekmektedir.</h6>
+            <h5 className='company-name'>{t('add-bank-btn')}</h5>
             <div className='bank'></div>
 
             <Button className="fund-button" onClick={() => setModalOpened(true)} label="Banka Hesabı Ekle" />

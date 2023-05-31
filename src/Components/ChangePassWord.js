@@ -3,29 +3,31 @@ import ReactDOM from 'react-dom';
 import  './Setting.css'
 import styles from './styles.module.css'
 import Button from './button';
+import { useTranslation } from 'react-i18next';
 
-export default function ChangePass() {
+export default function ChangePass({Change}) {
+    const { t, i18n } = useTranslation();
     return(
         <div className='account-card'>
-            <h5>Şifre Değiştir</h5>
+            <h5>{t('pass-btn')}</h5>
             <div className='account-form'>
                 <form>
                     <div className='form-element'>
                         <div>
-                            <label>Mevcut Şifre</label>
+                            <label>{t('pass-curreny')}</label>
                             <input className='form-control' type="password" name="pass-old" />
                         </div>
                         <div>
-                            <label>Yeni Şifre</label>
+                            <label>{t('new-pass')}</label>
                             <input className='form-control' type="password" name="pass-new"/>
                         </div>
                         <div>
-                            <label> Yeni Şifre Tekrar</label>
+                            <label> {t('new-pass1')}</label>
                             <input className='form-control' type="password" name="pass-new-2"/>
                         </div>
                         <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
-                            <Button  style={{width:"49%"}} className="fund-button" label="Şifre Değiştir" />
-                            <Button style={{width:"49%"}} className="fund-button cancel" label="Vazgeç" />
+                            <Button  style={{width:"49%"}} className="fund-button" label={t('pass-btn')} />
+                            <Button style={{width:"49%"}}onClick={(e) => Change("0")} className="fund-button cancel" label={t('cancel')} />
                         </div>
                        
                    

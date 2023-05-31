@@ -133,12 +133,14 @@
     "c6":"First, you open a “revenue account” designated to receive payments from your customers. Then the predetermined revenue share percentage is deducted from your revenue account inflow during the financing period. Revenue sharing continues until the principal is fully paid back.",
     "sss7":"Can I make an early repayment?",
     "c7":"You can make repayments at any time.",
-    "title4":"Revenue Verification",
+    "title4":"Verify Your Revenues",
     "gelir-info":"In order to verify your revenue, upload bank statements showing the money inflows to your bank accounts. You must verify sales revenues obtained for the last 6 months at least.",
-    "rapor-info":"Gerçekleştirdiğiniz satışları doğrulamak amacıyla e-ticaret sitelerinden elde ettiğiniz satış raporlarını yükleyin. En az son 6 ayda yapılan satışları gösteren raporları yüklemeniz gerekmektedir.",
+    "rapor-info":"Upload sales reports you get from e-commerce websites to verify your sales. You must upload reports showing the sales made in the last 6 months at least.",
     "gelir-info-1":"Your financial information will determine your eligibility. Adding your bank accounts and statements will ensure you receive as much financing as possible.",
     "fund-bank-account":"Banka Hesapları",
-    "add-bank-btn":"Upload Statement",
+    "add-bank-btn":"Add Bank Account",
+    "select-bank":"Select a bank",
+    "crpty":"*Data transfer with end-to-end encryption.",
     "app-fund":"Fon Başvurusu",
     "hesap":"Bank Statements",
     "sales-report":"Sales Reports",
@@ -188,7 +190,10 @@
     "gbp":"GBP",
     "report-modal":" Upload E-commerce Sales Report",
     "report-info":"Please upload POS / Payment Platform / E-commerce website reports showing all your e-commerce sales. Upload one sales report at a time. Repeat this process for each sales report.",
-    "report-not":"*Upload reports showing money inflows for the last 6 months at least."
+    "report-not":"*Upload reports showing money inflows for the last 6 months at least.",
+    "pass-curreny":" Current Password",
+    "new-pass":"New Password",
+    "new-pass1":"Confirm New Password"
    
 
 

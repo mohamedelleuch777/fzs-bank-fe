@@ -137,13 +137,15 @@
     "title4":"Gelirlerini Doğrula",
     "gelir-info":"Elde ettiğiniz gelirleri doğrulamak amacıyla banka hesaplarınıza gerçekleşen para girişlerini gösteren ekstreleri yükleyiniz. En az son 6 ay elde edilen satış gelirlerini doğrulamanız gerekmektedir.",
     "rapor-info":"Gerçekleştirdiğiniz satışları doğrulamak amacıyla e-ticaret sitelerinden elde ettiğiniz satış raporlarını yükleyin. En az son 6 ayda yapılan satışları gösteren raporları yüklemeniz gerekmektedir.",
-    "gelir-info-1":"Mali bilgileriniz, finansman uygunluğunuzu belirleyecektir. Banka hesaplarınızı ve ekstrelerinizi eklemek, mümkün olan en fazla sermayeyi almanızı sağlayacaktır.",
+    "gelir-info-1":"Mali bilgileriniz, finansman uygunluğunuzu belirleyecektir. Banka hesaplarınızı / ekstrelerinizi ve satış raporlarınızı eklemek, mümkün olan en fazla finansmanı almanızı sağlayacaktır.",
     "fund-bank-account":"Banka Hesapları",
     "add-bank-btn":"Banka Hesabı Ekle",
+    "crpty":"*Uçtan uca şifreleme ile veri aktarımı",
+    "select-bank":"Banka Seç",
     "app-fund":"Fon Başvurusu",
     "hesap":"Hesap Hareketleri",
     "sales-report":"Satış Raporları",
-    "entegre":"Entegrasyon geliştirme süreçleri devam etmektedir! ",
+    "entegre":"ENTEGRASYON GELİŞTİRME SÜREÇLERİ DEVAM ETMEKTEDİR! ",
     "pazarlama":"Pazarlama Platformu Entegrasyonu",
     "odeme":"Ödeme Platformu Entegrasyonu",
     "reklam":"Reklam Platformu Entegrasyonu",
@@ -189,7 +191,16 @@
     "gbp":"GBP",
     "report-modal":"E-ticaret Satış Raporu Yükle",
     "report-info":"Lütfen tüm e-ticaret satışlarınızı gösteren POS/Ödeme Platformu/E-ticaret Sitesi raporlarını yükleyiniz. Her seferinde bir satış raporu yükleyiniz. Her satış raporu için bu işlemi tekrarlayınız.",
-    "report-not":"*En az son 6 ayın para girişlerini yansıtan raporlar yükleyiniz"
+    "report-not":"*En az son 6 ayın para girişlerini yansıtan raporlar yükleyiniz",
+    "pass-curreny":" Mevcut Şifre",
+    "new-pass":"Yeni Şifre",
+    "new-pass1":"Yeni Şifre Tekrar"
+
+   
+
+
+
+
    
 
 

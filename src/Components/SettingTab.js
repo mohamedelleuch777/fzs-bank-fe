@@ -49,8 +49,10 @@ import AddOwn from './AddOwn';
         </TabPanel>
         <TabPanel>
           <div className="panel-content">
-            {changeTab=="3"?
-            <ChangePass Change={changeHandler}/>:<ProfileInfoTabCard/>}
+            {changeTab=="0" &&
+            <ProfileInfoTabCard Change={changeHandler}/>}
+            {changeTab=="3" &&
+            <ChangePass Change={changeHandler}/>}
           
           </div>
         </TabPanel>

@@ -15,35 +15,37 @@ export default function AppForFunding() {
     const { t, i18n } = useTranslation();
     return (
         <div className='account-card'>
-            <h3>Gelirlerini Doğrula</h3>
-            <h6>Mali bilgileriniz, finansman uygunluğunuzu belirleyecektir. Banka hesaplarınızı / ekstrelerinizi ve satış raporlarınızı eklemek, mümkün olan en fazla finansmanı almanızı sağlayacaktır.</h6>
+            <h3>{t('title4')}</h3>
+            <h6>{t('gelir-info-1')}</h6>
             <div className='account-form'>
+                <span className='company-name'>{t('hesap')}</span>
                 <h6>{t('ekstre-info')}</h6>
-                <Button className="fund-button"  onClick={() => setModalOpened(true)} label="Ekstre Yükle" />
+                <Button className="fund-button"  onClick={() => setModalOpened(true)} label={t('ekstre-btn')} />
                 {modalOpened && <AddEkstre  setOpenModal={setModalOpened}/>}
             </div>
             
            
             <div className='account-form'>
-                <span className='company-name'>Satış Raporları</span>
-                <h6>Gerçekleştirdiğiniz satışları doğrulamak amacıyla e-ticaret sitelerinden elde ettiğiniz satış raporlarını yükleyin. En az son 6 ayda yapılan satışları gösteren raporları yüklemeniz gerekmektedir.</h6>
-                 <Button className="fund-button" onClick={() => setModalOpened2(true)} label="Rapor Yükle" />
+                <span className='company-name'>{t('sales-report')}</span>
+                <h6>{t('rapor-info')}</h6>
+                 <Button className="fund-button" onClick={() => setModalOpened2(true)} label={t('rapor-btn')} />
                  {modalOpened2 && <AddReports  setOpenModal={setModalOpened2}/>}
             </div>
+            <h4 style={{marginTop:"3rem"}}>{t('entegre')}</h4>
             <div className='account-form'>
-                <span className='company-name'>Pazarlama Platformu Entegrasyonu</span>
+                <span className='company-name'>{t('pazarlama')}</span>
                 <div className='platform-card'> Google Analytics</div>
             </div>
             <div className='account-form'>
-                <span className='company-name'>Ödeme Platformu Entegrasyonu</span>
+                <span className='company-name'>{t('odeme')}</span>
                 <div className='platform-card'> Stripe</div>
             </div>
             <div className='account-form'>
-                <span className='company-name'>Reklam Platformu Entegrasyonu</span>
+                <span className='company-name'>{t('reklam')}</span>
                 <div className='platform-card'> Google ADS</div>
             </div>
             <div className='account-form'>
-                <span className='company-name'>Muhasebe Platformu Entegrasyonu</span>
+                <span className='company-name'>{t('muhasebe')}</span>
                 <div className='platform-card'> MUPA</div>
             </div>
             

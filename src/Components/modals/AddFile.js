@@ -4,9 +4,11 @@ import  './modal.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
+import { useTranslation } from 'react-i18next';
 
  
 function AddFile({ setOpenModal }) {
+  const { t, i18n } = useTranslation();
     const handleClose = () => setOpenModal(false);
     const handleShow = () => setOpenModal(true);
     return (
@@ -14,28 +16,27 @@ function AddFile({ setOpenModal }) {
         <Modal.Header closeButton>
         </Modal.Header>
         <Modal.Body className='content'>
-          <h3>Belge Ekle</h3>
+          <h3>{t('add-file')}</h3>
           <Form>
             <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
               <Form.Control
                 type="text"
-                placeholder="Belge Adı"
+                placeholder={t('file-name')}
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="file"
-                placeholder="Hesap Sahibinin Adı"
-                autoFocus
-              />
-            </Form.Group>
-            <div className='btns'>
+            <div tabIndex={0} role="presentation">
+               <input className='form-control' multiple type="file" name="add-file" tabIndex={1} style={{display:"none"}} />
+                <div className='add-file' style={{fontSize:"14px"}}>
+                    {t('surukle')}
+                </div>
+            </div>
+            <div className='btns forms'>
               <Button className=" bt fund-button"  onClick={handleClose}>
-                 Belge Ekle
+                {t('add-btn')}
               </Button>
               <Button className=" bt fund-button cancel" style={{marginLeft:"32px"}}  onClick={handleClose}>
-                 Vazgeç
+                {t('cancel')}
               </Button>
               
             </div>
