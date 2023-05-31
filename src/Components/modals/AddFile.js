@@ -30,7 +30,7 @@ function AddFile({ setOpenModal }) {
                 <div className='add-file' style={{fontSize:"14px"}}>
                     {t('surukle')}
                 </div>
-            </div>
+            </div>  
             <div className='btns forms'>
               <Button className=" bt fund-button"  onClick={handleClose}>
                 {t('add-btn')}
