@@ -185,7 +185,11 @@
     "tl":"TL",
     "usd":"USD",
     "eur":"EUR",
-    "gbp":"GBP"
+    "gbp":"GBP",
+    "report-modal":" Upload E-commerce Sales Report",
+    "report-info":"Please upload POS / Payment Platform / E-commerce website reports showing all your e-commerce sales. Upload one sales report at a time. Repeat this process for each sales report.",
+    "report-not":"*Upload reports showing money inflows for the last 6 months at least."
+   
 
 
 }

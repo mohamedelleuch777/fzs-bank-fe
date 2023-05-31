@@ -186,7 +186,13 @@
     "tl":"TL",
     "usd":"USD",
     "eur":"EUR",
-    "gbp":"GBP"
+    "gbp":"GBP",
+    "report-modal":"E-ticaret Satış Raporu Yükle",
+    "report-info":"Lütfen tüm e-ticaret satışlarınızı gösteren POS/Ödeme Platformu/E-ticaret Sitesi raporlarını yükleyiniz. Her seferinde bir satış raporu yükleyiniz. Her satış raporu için bu işlemi tekrarlayınız.",
+    "report-not":"*En az son 6 ayın para girişlerini yansıtan raporlar yükleyiniz"
+   
+
+
     
     
 

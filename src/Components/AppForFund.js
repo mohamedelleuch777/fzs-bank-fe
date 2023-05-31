@@ -7,9 +7,11 @@ import styles from './styles.module.css'
 import BankAccountsTabCard from './BankAccountsTabCard'
 import AddEkstre from './modals/AddEkstre'
 import { useTranslation } from 'react-i18next';
+import AddReports from './modals/AddReports';
 
 export default function AppForFunding() {
     const [modalOpened, setModalOpened] = useState(false);
+    const [modalOpened2, setModalOpened2] = useState(false);
     const { t, i18n } = useTranslation();
     return (
         <div className='account-card'>
@@ -25,8 +27,8 @@ export default function AppForFunding() {
             <div className='account-form'>
                 <span className='company-name'>Satış Raporları</span>
                 <h6>Gerçekleştirdiğiniz satışları doğrulamak amacıyla e-ticaret sitelerinden elde ettiğiniz satış raporlarını yükleyin. En az son 6 ayda yapılan satışları gösteren raporları yüklemeniz gerekmektedir.</h6>
-                 <Button className="fund-button" label="Rapor Yükle" />
-                 
+                 <Button className="fund-button" onClick={() => setModalOpened2(true)} label="Rapor Yükle" />
+                 {modalOpened2 && <AddReports  setOpenModal={setModalOpened2}/>}
             </div>
             <div className='account-form'>
                 <span className='company-name'>Pazarlama Platformu Entegrasyonu</span>
