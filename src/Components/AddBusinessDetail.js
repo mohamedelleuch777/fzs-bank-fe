@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import{FaCertificate}from 'react-icons/fa';
 import  './Setting.css'
@@ -8,6 +8,22 @@ import { useTranslation } from 'react-i18next';
 
 export default function AddBusinessDetails({Change}) {
     const { t, i18n } = useTranslation();
+    const [citys, setCitys] = useState([]);
+ 
+    const cities=data=>{
+        fetch("https://openapi.aktifbank.com.tr/api/dev/address/getcities",{
+        method:'POST',
+        body:JSON.stringify(data)
+        })
+        .then(response=>response.json())
+        .then(response=>setCitys(response))
+    }
+    cities({
+        id:'4360533882961920'
+    })
+        
+
+    
     return(
         <div className='account-card'>
             <div className='account-form'>
@@ -46,7 +62,12 @@ export default function AddBusinessDetails({Change}) {
                         <div>
                             <label>İş Yeri Adresi</label>
                             <div  style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
-                                <select  className='form-control form-select address'  name="city" ><option>{t('city')}</option></select>
+                             
+                                <select  className='form-control form-select address'  name="city" >
+                                {citys.map(city=>{return(
+                                    <option>{city.Name}</option>);})
+                                }  
+                                </select>
                                 <select className='form-control form-select address' name="dicsrit" ><option>{t('district')}</option></select>
                                 <select className='form-control form-select'  name="neig"><option>{t('neig')}</option></select>
                             </div>
@@ -56,6 +77,7 @@ export default function AddBusinessDetails({Change}) {
                                 </option>
                             </select>
                             <div  style={{display:"flex", flexDirection:"row", justifyContent:"space-between"}}>
+                               
                                 <select  className='form-control form-select address'  name="door-number" ><option>{t('number')}</option></select>
                                 <select  className='form-control form-select' name="apartment" ><option>{t('apartment')}</option></select>
                                 </div>
