@@ -193,8 +193,41 @@
     "report-not":"*Upload reports showing money inflows for the last 6 months at least.",
     "pass-curreny":" Current Password",
     "new-pass":"New Password",
-    "new-pass1":"Confirm New Password"
+    "new-pass1":"Confirm New Password",
+    "p1":"1K – 10K",
+    "p2":"10 – 20K",
+    "p3":"20 – 50K",
+    "p4":"50 – 100K",
+    "p5":"100 – 500K",
+    "p6":"500K – 1M",
+    "p7":"1 – 5M",
+    "p8":"5 – 10M",
+    "p9":"10 – 50M",
+    "p10":"50 – 100M",
+    "s1":"Joint Stock Company / Anonim Şirket",
+    "s2":"Limited Partnership (with shares) / Komandit Şirket (Paylı)",
+    "s3":"Cooperative / Kooperatif",
+    "s4":"Limited Company  / Limited Şirket",
+    "s5":"Sole Trader (Ordinary Limited Partnership ) / Şahıs Şirketi (Adi Komandit)",
+    "s6":"Sole Trader (True) / Şahıs Şirketi (Hakiki)",
+    "s7":"Sole Trader (Collective Company) / (Şahıs Şirketi (Kollektif )"
    
 
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+
+
+ 
+
+
+

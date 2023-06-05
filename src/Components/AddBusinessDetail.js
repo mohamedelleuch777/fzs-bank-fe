@@ -41,9 +41,13 @@ export default function AddBusinessDetails({Change}) {
                         <div>
                             <label> {t('company-type')}</label>
                             <select className='form-control form-select' name="business-type" >
-                                <option>
-                                    {t('personel-company')}
-                                </option>
+                                <option> {t('s1')}</option>
+                                <option> {t('s2')}</option>
+                                <option> {t('s3')}</option>
+                                <option> {t('s4')}</option>
+                                <option> {t('s5')}</option>
+                                <option> {t('s6')}</option>
+                                <option> {t('s7')}</option>
 
                             </select>
                         </div>

@@ -194,7 +194,42 @@
     "report-not":"*En az son 6 ayın para girişlerini yansıtan raporlar yükleyiniz",
     "pass-curreny":" Mevcut Şifre",
     "new-pass":"Yeni Şifre",
-    "new-pass1":"Yeni Şifre Tekrar"
+    "new-pass1":"Yeni Şifre Tekrar",
+    "p1":"1000 – 10 bin TL",
+    "p2":"10 – 20 bin TL",
+    "p3":"20 – 50 bin TL",
+    "p4":"50 – 100 bin TL",
+    "p5":"100 – 500 bin TL",
+    "p6":"500 bin – 1 milyon TL",
+    "p7":"1 – 5 milyon TL",
+    "p8":"5 – 10 milyon TL",
+    "p9":"10 – 50 milyon TL",
+    "p10":"50 – 100 milyon TL",
+    "s1":"Anonim Şirket",
+    "s2":"Komandit Şirket (Paylı)",
+    "s3":"Kooperatif",
+    "s4":"Limited Şirket",
+    "s5":"Şahıs Şirketi (Adi Komandit)",
+    "s6":"Şahıs Şirketi (Hakiki)",
+    "s7":"Şahıs Şirketi (Kollektif )"
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    
 
