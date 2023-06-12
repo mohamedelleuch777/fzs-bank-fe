@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import{FaCertificate}from 'react-icons/fa';
 import  './Setting.css'
@@ -8,6 +8,20 @@ import { useTranslation } from 'react-i18next';
 
 export default function AddOwn() {
     const { t, i18n } = useTranslation();
+    const [professionList, setProfessionList] = useState([]);
+    const jobs=data=>{
+        fetch("https://openapi.aktifbank.com.tr/api/dev/additionalinfo/getprofessionlist",{
+        method:'GET',
+        body:JSON.stringify(data)
+        })
+        .then(response=>response.json())
+        .then(response=>setProfessionList(response))
+    }
+    jobs({
+        id:'2369263207710720'
+    })
+    console.log(professionList)
+    
     return(
         <div className='account-card'>
             <div className='account-form'>
@@ -33,7 +47,11 @@ export default function AddOwn() {
                         </div>
                         <div>
                             <label>{t('job')}</label>
-                            <input className='form-control' type="text" name="job"/>
+                            <select  className='form-control form-select '  name="job" >
+                                {professionList.map(profession=>{return(
+                                    <option>{profession.Name}</option>);})
+                                }  
+                                </select>
                         </div>
                         <div >
                                 <label> {t('birthday')}</label>
